@@ -52,7 +52,7 @@ Font Family Declaration
 /* ///////////////////////////////////////////////////////////
 Color Declaration 
 /////////////////////////////////////////////////////////// */
-:root {
+/*:root {
   --clr-common-white: #FFFFFF;
   --clr-common-black: #000;
   --clr-common-primary: #28E98C;
@@ -70,6 +70,26 @@ Color Declaration
   --clr-bg-gray: #E3E8EA;
   --clr-bg-gray-2: #F1F1F1;
   --clr-bg-gray-3: #EEEEEE;
+}*/
+
+:root {
+   --clr-common-white: #ffffff; /* white backgrounds */
+   --clr-common-black: #2d3748; /* dark charcoal (matches Invena's dark elements) */
+   --clr-common-primary: #2d3748; /* same dark charcoal for primary elements */
+   --clr-common-gray: #4a5568; /* medium gray text */
+   --clr-common-border: #e2e8f0; /* light borders */
+   --clr-body-heading: #2d3748; /* dark headings */
+   --clr-body-text: #4a5568; /* medium gray body text */
+   --clr-color-orange: #2d3748; /* replace orange with dark charcoal */
+   --clr-color-orange-2: #4a5568; /* replace orange with medium gray */
+   --clr-color-orange-3: #a0aec0; /* replace orange with light gray */
+   --clr-theme-primary: #2d3748; /* main theme color - dark charcoal */
+   --clr-theme-primary-2: #4a5568; /* secondary theme - medium gray */
+   --clr-theme-primary-4: #2d3748; /* darker theme - same charcoal */
+   --clr-theme-primary-5: #2d3748; /* accent color - same charcoal */
+   --clr-bg-gray: #f7fafc; /* light background */
+   --clr-bg-gray-2: #e2e8f0; /* medium light background */
+   --clr-bg-gray-3: #a0aec0; /* medium gray */
 }
 
 /* ///////////////////////////////////////////////////////////
@@ -3967,6 +3987,7 @@ Hero CSS o1 Start
   padding-top: 210px;
   padding-bottom: 215px;
 }
+/*
 .eb_h3-hero-single::before {
   position: absolute;
   left: 0;
@@ -3974,9 +3995,10 @@ Hero CSS o1 Start
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(3deg, rgba(0, 3, 255, 0.7) 3.51%, rgba(2, 3, 57, 0.14) 83.23%);
+
   z-index: -1;
 }
+*/
 .eb_h3-hero-shape {
   position: absolute;
   left: 0;
@@ -4094,6 +4116,7 @@ Hero CSS o1 Start
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          z-index:3;
 }
 @media (max-width: 1599px) {
   .eb_h3-hero-social {
@@ -4169,6 +4192,7 @@ Hero CSS o1 Start
 
 .h3_hero-active {
   position: relative;
+  z-index:2;
 }
 .h3_hero-active .h3_hero-pagination {
   position: absolute;
@@ -5745,7 +5769,7 @@ Hero CSS o1 Start
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(3deg, rgba(0, 3, 255, 0.7) 3.51%, rgba(2, 3, 57, 0.14) 83.23%);
+  background: linear-gradient(3deg, rgba(154, 154, 162, 0.7) 3.51%, rgba(2, 3, 57, 0.14) 83.23%);
 }
 .eb_h3-project-item-img {
   height: 100%;
@@ -11672,3 +11696,415 @@ Hero CSS o1 Start
   background-color: #B0BBBE;
   content: "";
 }
+
+/*client section*/
+
+.tj-client-section {
+            background: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tj-client-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(45, 55, 72, 0.03) 0%, rgba(74, 85, 104, 0.03) 100%);
+            z-index: 1;
+        }
+
+        .row {
+            position: relative;
+            z-index: 2;
+        }
+
+
+        .client-content {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .sec-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin: 0;
+            line-height: 1.2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .client-numbers {
+            background: linear-gradient(135deg, var(--primary-color, #2d3748), var(--text-secondary, #4a5568));
+            color: var(--text-light, #ffffff);
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            position: relative;
+        }
+
+        /*  .client-slider {
+            overflow: hidden;
+            padding: 20px 0;
+        }*/
+        .client-slider {
+            overflow: hidden;
+            padding: 20px 0;
+            mask: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+            -webkit-mask: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+        }
+
+        .client-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+            padding: 0 20px;
+        }
+
+        /* .client-logo {
+            background: #fff;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }*/
+
+        .client-logo {
+            background: var(--background-primary, #ffffff);
+            border: 1px solid var(--border-color, #e2e8f0);
+            border-radius: 20px;
+
+            transition: all 0.3s ease;
+            padding: 25px;
+            max-width: 180px;
+            width: 180px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(45, 55, 72, 0.08);
+        }
+
+        .client-logo::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            /* background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);*/
+            transition: left 0.5s ease;
+        }
+
+
+        .client-logo:hover::before {
+            left: 100%;
+        }
+
+
+        .client-logo::before {
+            background: linear-gradient(90deg, transparent, rgba(45, 55, 72, 0.1), transparent);
+        }
+
+
+        /*.client-logo:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }*/
+
+        .client-logo:hover {
+            background: var(--background-secondary, #f7fafc);
+            border-color: var(--gray-medium, #a0aec0);
+            box-shadow: 0 20px 40px rgba(45, 55, 72, 0.15);
+            transform: translateY(-8px);
+        }
+
+
+
+        /* .client-logo img {
+            max-width: 100%;
+            max-height: 60px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            transition: all 0.3s ease;
+        }*/
+
+        .client-logo img {
+            max-width: 120px;
+            max-height: 50px;
+           /* filter: grayscale(60%) opacity(0.8);*/
+            object-fit: contain;
+            transition: all 0.3s ease;
+        }
+
+        /*.client-logo:hover img {
+            filter: grayscale(0%);
+        }*/
+
+        .client-logo:hover img {
+           /* filter: grayscale(0%) opacity(1);*/
+            transform: scale(1.05);
+        }
+
+        .swiper-wrapper {
+            transition-timing-function: linear !important;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .sec-title {
+                font-size: 1.8rem;
+            }
+
+            .client-numbers {
+                font-size: 2.2rem;
+            }
+
+            .section-gap {
+                padding: 50px 0;
+            }
+
+            .client-content {
+                margin-bottom: 40px;
+            }
+
+            .client-logo {
+                max-width: 150px;
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sec-title {
+                font-size: 1.5rem;
+            }
+
+            .client-numbers {
+                font-size: 1.8rem;
+            }
+
+            .client-logo {
+                max-width: 120px;
+                padding: 15px;
+            }
+
+            .client-logo img {
+                max-height: 45px;
+            }
+        }
+
+        /* Animation classes */
+        .fadeInUp {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 100%, 0);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        /* Loading state */
+        /* .client-logo.loading {
+            background: #f0f0f0;
+            animation: pulse 1.5s ease-in-out infinite;
+        }*/
+
+        /* Update loading state */
+        .client-logo.loading {
+            background: var(--background-secondary, #f7fafc);
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+
+
+        /* @keyframes pulse {
+            0% {
+                background: #f0f0f0;
+            }
+            50% {
+                background: #e0e0e0;
+            }
+            100% {
+                background: #f0f0f0;
+            }
+        }*/
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                background: var(--background-secondary, #f7fafc);
+            }
+
+            50% {
+                background: var(--border-color, #e2e8f0);
+            }
+        }
+
+        .tj-client-section {
+    padding: 60px 0; /* Moderate spacing for supporting content */
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+    .tj-client-section {
+        padding: 40px 0;
+    }
+}
+
+/* For mobile */
+@media (max-width: 480px) {
+    .tj-client-section {
+        padding: 30px 0;
+    }
+}
+
+/*Hero section extrA*/
+
+.eb_h3-hero-area {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#vanta-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8), rgba(30, 41, 59, 0.6), rgba(51, 65, 85, 0.4));
+    z-index: 1;
+}
+
+.geo-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Copy all the .shape-1 through .shape-6 styles and @keyframes float from the artifact */
+
+.geo-shapes .shape-1 {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(45deg, rgba(59, 130, 246, 0.3), rgba(147, 51, 234, 0.3));
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.geo-shapes .shape-2 {
+    position: absolute;
+    top: 60%;
+    right: 8%;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, rgba(16, 185, 129, 0.3), rgba(6, 182, 212, 0.3));
+    transform: rotate(45deg);
+    animation: float 8s ease-in-out infinite reverse;
+}
+
+.geo-shapes .shape-3 {
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 70px solid rgba(245, 101, 101, 0.3);
+    animation: float 7s ease-in-out infinite;
+}
+
+.geo-shapes .shape-4 {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, rgba(251, 146, 60, 0.3), rgba(249, 115, 22, 0.3));
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation: float 9s ease-in-out infinite;
+}
+
+.geo-shapes .shape-5 {
+    position: absolute;
+    bottom: 25%;
+    left: 8%;
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(45deg, rgba(168, 85, 247, 0.3), rgba(139, 92, 246, 0.3));
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    animation: float 5s ease-in-out infinite reverse;
+}
+
+.geo-shapes .shape-6 {
+    position: absolute;
+    top: 45%;
+    left: 3%;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, rgba(34, 197, 94, 0.3), rgba(22, 163, 74, 0.3));
+    border-radius: 50%;
+    animation: float 10s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+/* Fix z-index hierarchy */
+.h3_hero-active {
+    position: relative;
+    z-index: 2;
+}
+
+.eb_h3-hero-single {
+    position: relative;
+    z-index: 1;
+}
+
+/* Override the existing ::before pseudo-element */
+.eb_h3-hero-single::before {
+    z-index: -2 !important; /* Force it behind everything */
+}
+
