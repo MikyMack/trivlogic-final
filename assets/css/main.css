@@ -2423,6 +2423,11 @@ i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
   z-index: 9;
 }
 
+.eb_h3-header-area{
+/*  position:relative;*/
+/*  z-index:1000;*/
+}
+
 .eb-header-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2512,7 +2517,7 @@ i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
   gap: 20px;
 }
 .eb-header-logo {
-  max-width: 155px;
+  max-width: 105px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -11996,6 +12001,7 @@ Hero CSS o1 Start
     width: 100%;
     height: 100%;
     z-index: 0;
+     pointer-events: none;
 }
 
 .overlay {
@@ -12107,4 +12113,96 @@ Hero CSS o1 Start
 .eb_h3-hero-single::before {
     z-index: -2 !important; /* Force it behind everything */
 }
+
+/*Hero content extra*/
+
+.eb_h3-hero-content,
+.eb_h3-hero-social,
+.h3_hero-active {
+    /*position: relative;*/
+    z-index: 15; 
+}
+
+/* Additional fixes for dropdown menus and interactive elements */
+.eb_h2-header-menu nav ul.submenu {
+    z-index: 1001; /* Ensure dropdowns appear above everything */
+}
+
+.eb_h4-menubar {
+    z-index: 1002; /* Mobile menu button */
+}
+
+/* Geometric shapes should be above Vanta but below content */
+.geo-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5; /* Above Vanta background but below content */
+    pointer-events: none; /* Don't interfere with clicks */
+}
+
+/* Individual shape positioning */
+.geo-shapes .shape-1,
+.geo-shapes .shape-2,
+.geo-shapes .shape-3,
+.geo-shapes .shape-4,
+.geo-shapes .shape-5,
+.geo-shapes .shape-6 {
+    position: absolute;
+    pointer-events: none;
+}
+
+/* Overlay should not interfere with clicks */
+.overlay {
+    pointer-events: none;
+    z-index: 8; /* Above Vanta and shapes but below content */
+}
+/*
+.eb_h3-header-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: #fff; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+
+.body-wrapper {
+  margin-top: 120px; 
+}*/
+
+/***********correct*********/
+.eb_h3-header-area {
+  position: relative; 
+  z-index: 10;
+}
+
+.eb_h3-header-top{
+  position:relative; 
+   z-index:99999;
+   
+}
+
+
+.eb_h3-header-main {
+  position: fixed;
+top:0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: #fff; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  
+}
+
+
+.body-wrapper {
+  margin-top: 0px; 
+}
+
+
 
