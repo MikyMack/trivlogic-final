@@ -2,10 +2,9 @@
 ************
 *************************
 
-   Template Name: Embum - Business HTML5 Template
-   Description: Philip is a modern unique design layout focused for resume, cv, vCard, startup business, companies, agencies, all types of professions person which need a professional way to showcase their projects and services with 100% super responsive experience.
-   Author: _ThemePhi
-   Version: 1.0
+   Template Name: Trivlogic - Business HTML5 Template
+ 
+ 
 
 -----------------------------------------------------------------------------------
 
@@ -12043,7 +12042,7 @@ eb_h3-header-main{
     left: 0;
     width: 100%;
     height: 100%;
-   background: rgba(0, 0, 0, 0.45); 
+  /* background: rgba(0, 0, 0, 0.45); */
     z-index: 1;
 }
 
