@@ -29,6 +29,11 @@
   </head>
   <body>
 
+       <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
     <!-- preloader start -->
     <div class="loader-wrap">
         <div class="loader">
@@ -87,7 +92,10 @@
             </div>
         </div>
     </div>
+
+
     <div class="offcanvas-overlay"></div>
+
     <!-- sidebar-information-area-end -->
 
 
@@ -95,31 +103,7 @@
 
      <!-- Start Main Header -->
                 <header class="eb_h3-header-area">
-                 <!--   <div class="eb_h3-header-top">
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-lg-9">
-                                    <div class="eb_h3-header-top-address">
-                                        <ul>
-                                            <li><a href="tel:28829329442"><i class="fa-solid fa-phone"></i>(888) 698 - 3687</a></li>
-                                            <li><a href="mailto:example@gmail.com"><i class="fa-solid fa-envelope"></i>example@gmail.com</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-location-dot"></i>London SO587 2kh GV25</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="eb_h3-header-top-social">
-                                        <ul>
-                                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+                
 
                     <div class="eb_h3-header-main">
                         <div class="container">
@@ -137,20 +121,25 @@
                                             <ul>
                                                 
                                            <li> <a href="index.html">Home</a> </li>                                    
-                                                  
+                                                     <li> <a href="about.html">About</a> </li>    
+                                                         
+                                                             
                                                         
                                             <li class="menu-has-child">
-                                                    <a href="#">Pages</a>
+                                                    <a href="service.html">Service</a>
                                                     <ul class="submenu">
-                                                        <li><a href="about.html">About</a></li>
-                                                        <li><a href="service.html">Service</a></li>
-                                                        <li><a href="team.html">team</a></li>
-                                                        <li><a href="price.html">Price</a></li>
-                                                        <li><a href="testimonial.html">Testimonial</a></li>
-                                                        <li><a href="faq.html">Faq</a></li>
-                                                        <li><a href="404.html">404</a></li>
+                                                        <li><a href="webdev-service.html">Web Development</a></li>
+                                                        <li><a href="software-dev-service.html">Software Development</a></li>
+                                                        <li><a href="mobile-app-dev-service.html">Mobile App Development</a></li>
+                                                        <li><a href="digital-mark-service.html">Digital Marketing</a></li>
+                                                        <li><a href="Branding-service.html">Branding</a></li>
+                                                        <li><a href="seo-service.html">SEO</a></li>
+                                                        
                                                     </ul>
-                                                </li>
+                                            </li>
+
+
+                                                <li> <a href="index.html">Home</a> </li> 
                                                 <li class="menu-has-child">
                                                     <a href="#">Project</a>
                                                     <ul class="submenu">
@@ -165,8 +154,9 @@
                                                         <li><a href="blog-details.html">News Details</a></li>
                                                     </ul>
                                                 </li>
+                                                <li><a href="career.html">Career</a></li>
                                                 <li><a href="contact.html">Contact</a></li>
-                                                 <li><a href="career.html">Career</a></li>
+                                                 
                                             </ul>
                                         </nav>
                                     </div>
@@ -197,22 +187,9 @@
                 <!-- hero area start -->
                 <section class="eb_h3-hero-area" id="hero" style="position:relative">
 
-                    <!-- Add right after opening section tag -->
-<!--<div id="vanta-bg" style="height: 100vh; width: 100%;"></div> -->
+ <!-- 3D Particle Canvas - This is where the magic happens! -->
+        <canvas id="particle-canvas"></canvas>
 
-<!-- Add this to your HTML where you want the network animation -->
-<div id="vanta-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100vh; z-index: -1;"></div>
-<div class="overlay"></div>
-
-<!-- Add geometric shapes -->
-<div class="geo-shapes">
-    <div class="shape-1"></div>
-    <div class="shape-2"></div>
-    <div class="shape-3"></div>
-    <div class="shape-4"></div>
-    <div class="shape-5"></div>
-    <div class="shape-6"></div>
-</div>
                     <div class="h3_hero-active swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -1029,7 +1006,7 @@
     <!--client area end -->
 
                 <!-- footer area start -->
-                <footer class="eb_h3-footer-area">
+             <!--   <footer class="eb_h3-footer-area">
                     <div class="eb_h3-footer-top pt-110 pb-80">
                         <img src="assets/images/bg/h3_footer-shape.png" alt="" class="eb_h3-footer-shape-1">
                         <img src="assets/images/bg/h3_footer-shape-2.png" alt="" class="eb_h3-footer-shape-2">
@@ -1043,6 +1020,11 @@
                                             </a>
                                         </div>
                                         <div class="eb_h3-footer-address">
+                                            <a href="#"><i class="fa-solid fa-location-dot"></i>London SO587 2kh <br>
+                                                GV25+G6 United Kingdom</a>
+                                            <a href="tel:+222682582368"><i class="fa-solid fa-phone"></i>+222 68 258 2368</a>
+                                        </div>
+                                         <div class="eb_h3-footer-address">
                                             <a href="#"><i class="fa-solid fa-location-dot"></i>London SO587 2kh <br>
                                                 GV25+G6 United Kingdom</a>
                                             <a href="tel:+222682582368"><i class="fa-solid fa-phone"></i>+222 68 258 2368</a>
@@ -1112,8 +1094,140 @@
                             </div>
                         </div>
                     </div>
-                </footer>
+                </footer> -->
                 <!-- footer area end -->
+
+<!-- footer area start -->
+
+<footer class="eb_h3-footer-area">
+    <div class="eb_h3-footer-top pt-110 pb-80">
+        <img src="assets/images/bg/h3_footer-shape.png" alt="" class="eb_h3-footer-shape-1">
+        <img src="assets/images/bg/h3_footer-shape-2.png" alt="" class="eb_h3-footer-shape-2">
+        <div class="container">
+            <div class="row justify-content-between">
+                
+                <!-- Address Section -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-7">
+                    <div class="eb_h3-footer-widget1 mb-30">
+                        <div class="eb_h3-footer-logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo/logo.webp" alt="Triv Logic">
+                            </a>
+                        </div>
+                        <div class="eb_h3-footer-address">
+                            <h4>India:</h4> 
+                            <div class="eb_h3-footer-address-loc">
+                            <i class="fa-solid fa-location-dot"></i> 
+                          <p>Fortune Spaces,<br> SP Heights Western Wing,
+                                S.P Lane, Enchakal, Vallakadavu P.O<br>
+                                Trivandrum-695008</p>
+                                </div>
+                        </div>
+                        <div class="eb_h3-footer-address">
+                             <h4>UK:</h4>
+                             <div class="eb_h3-footer-address-loc">
+                           
+                           <i class="fa-solid fa-location-dot"></i> <p>Marlborough House,<br> 32-36 Hazelwood Road,
+                                Northampton, NN1 1LN</p>
+                                </div>
+                        </div>
+                           <div class="eb_h3-footer-social">
+                                            <ul>
+                                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                            </ul>
+                                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Section -->
+                <div class="col-xl-2 col-lg-2 col-sm-5">
+                    <div class="eb_h3-footer-widget mb-30">
+                        <h3 class="eb_h3-footer-widget-title">Services</h3>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Software Development</a></li>
+                            <li><a href="#">Branding Solutions</a></li>
+                            <li><a href="#">SEO Optimization</a></li>
+                            <li><a href="#">Mobile App Development</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="col-xl-2 col-lg-2 col-sm-5">
+                    <div class="eb_h3-footer-widget mb-30">
+                        <h3 class="eb_h3-footer-widget-title">Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Career</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Section (Improved with grouping + icons) -->
+                <div class="col-xl-2 col-lg-3 col-sm-6">
+                    <div class="eb_h3-footer-widget mb-30">
+                        <h3 class="eb_h3-footer-widget-title">Contact</h3>
+                        <ul>
+                            <li><strong>India:</strong></li>
+                            <li><a href="tel:+918848609311">+91 8848609311</a></li>
+                            <li> <a href="tel:+918123010000">+91 8123010000</a></li>
+
+                            <li class="mt-2"><strong>United Kingdom:</strong></li>
+                            <li> <a href="tel:+447771868301">+44 7771868301</a></li>
+
+                            <li class="mt-2"><i class="fa-solid fa-envelope"></i> 
+                                <a href="mailto:info@trivlogic.com">info@trivlogic.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Employee Login Portal -->
+                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-7">
+                    <div class="eb_h3-footer-widget mb-30">
+                        <h3 class="eb_h3-footer-widget-title">Employee Login Portal</h3>
+                        <form action="#">
+                            <input type="email" placeholder="Enter Your Email">
+                            <input type="password" placeholder="Enter Password">
+                            <button type="submit">Login <i class="fa-light fa-arrow-up-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="eb_h3-footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="eb_h3-footer-copyright-text">
+                        <p>©2025 Triv Logic. All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="eb_h3-footer-menu">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer area end -->
+
+
 
             </div>
         </div>
@@ -1137,37 +1251,9 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/main.js"></script>
 
-    <!-- Replace your current Three.js and Vanta.js scripts with these -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
-<script>
-// Make sure this runs after DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // Check if element exists
-    const vantaElement = document.querySelector('#vanta-bg');
-    if (vantaElement) {
-        VANTA.NET({
-            el: "#vanta-bg",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x3b82f6,
-            backgroundColor: 0x0f172a,
-            points: 10.00,
-            maxDistance: 25.00,
-            spacing: 20.00
-        });
-        console.log('VANTA initialized successfully');
-    } else {
-        console.log('VANTA target element not found');
-    }
-});
 
-</script>
+
+
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -1187,6 +1273,223 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 </script>
+
+<!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <script>
+        // 3D Particle Field Implementation
+        let scene, camera, renderer, particles;
+        let mouseX = 0, mouseY = 0;
+        
+        function initParticleField() {
+            const canvas = document.getElementById('particle-canvas');
+            
+            // Scene setup
+            scene = new THREE.Scene();
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            renderer = new THREE.WebGLRenderer({ 
+                canvas: canvas, 
+                alpha: true,
+                antialias: true 
+            });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(window.devicePixelRatio);
+            
+            // Create particle system (fewer particles for subtlety)
+            const geometry = new THREE.BufferGeometry();
+            const particleCount = window.innerWidth > 768 ? 800 : 400; // Much fewer particles
+            
+            const positions = new Float32Array(particleCount * 3);
+            const velocities = new Float32Array(particleCount * 3);
+            const scales = new Float32Array(particleCount); // For growth animation
+            const lifetimes = new Float32Array(particleCount); // For lifecycle
+            const colors = new Float32Array(particleCount * 3);
+            
+            // Create particles that start from center and expand outward
+            for (let i = 0; i < particleCount; i++) {
+                const i3 = i * 3;
+                
+                // Start near center, will expand outward
+                const radius = Math.random() * 20;
+                const theta = Math.random() * Math.PI * 2;
+                const phi = Math.random() * Math.PI;
+                
+                positions[i3] = radius * Math.sin(phi) * Math.cos(theta);
+                positions[i3 + 1] = radius * Math.sin(phi) * Math.sin(theta);
+                positions[i3 + 2] = radius * Math.cos(phi);
+                
+                // Velocity pushes particles outward and to the sides
+                const speed = 0.3 + Math.random() * 0.5;
+                velocities[i3] = (positions[i3] / radius) * speed + (Math.random() - 0.5) * 0.2;
+                velocities[i3 + 1] = (positions[i3 + 1] / radius) * speed + (Math.random() - 0.5) * 0.1;
+                velocities[i3 + 2] = (positions[i3 + 2] / radius) * speed + (Math.random() - 0.5) * 0.2;
+                
+                // Lifecycle (particles will respawn)
+                scales[i] = 0; // Start invisible
+                lifetimes[i] = Math.random() * 1000; // Random start time
+                
+                // Subtle blue colors
+                colors[i3] = 0; // R
+                colors[i3 + 1] = 0.6 + Math.random() * 0.4; // G (blue-ish)
+                colors[i3 + 2] = 0.8 + Math.random() * 0.2; // B
+            }
+            
+            geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            geometry.setAttribute('velocity', new THREE.BufferAttribute(velocities, 3));
+            geometry.setAttribute('scale', new THREE.BufferAttribute(scales, 1));
+            geometry.setAttribute('lifetime', new THREE.BufferAttribute(lifetimes, 1));
+            geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+            
+            // Custom shader material for better control
+            const material = new THREE.PointsMaterial({
+                size: 2,
+                transparent: true,
+                opacity: 0.4, // More subtle
+                vertexColors: true,
+                blending: THREE.AdditiveBlending
+            });
+            
+            particles = new THREE.Points(geometry, material);
+            scene.add(particles);
+            
+            // Camera position
+            camera.position.z = 80;
+            
+            // Hide loading overlay
+            document.getElementById('loadingOverlay').style.opacity = '0';
+            setTimeout(() => {
+                document.getElementById('loadingOverlay').style.display = 'none';
+            }, 1000);
+            
+            // Start animation
+            animate();
+        }
+        
+        function animate() {
+            requestAnimationFrame(animate);
+            
+            const positions = particles.geometry.attributes.position.array;
+            const velocities = particles.geometry.attributes.velocity.array;
+            const scales = particles.geometry.attributes.scale.array;
+            const lifetimes = particles.geometry.attributes.lifetime.array;
+            const colors = particles.geometry.attributes.color.array;
+            
+            const time = Date.now() * 0.002;
+            
+            // Update each particle
+            for (let i = 0; i < scales.length; i++) {
+                const i3 = i * 3;
+                
+                // Update lifetime
+                lifetimes[i] += 1;
+                
+                // Particle lifecycle: grow from nothing, move away from center, then fade
+                if (lifetimes[i] < 100) {
+                    // Growing phase - particles appear and grow
+                    scales[i] = (lifetimes[i] / 100) * 0.5;
+                    colors[i3 + 1] = (lifetimes[i] / 100) * (0.6 + Math.random() * 0.4);
+                    colors[i3 + 2] = (lifetimes[i] / 100) * (0.8 + Math.random() * 0.2);
+                } else if (lifetimes[i] < 400) {
+                    // Moving phase - particles drift outward, especially away from text area
+                    scales[i] = 0.5;
+                    
+                    // Move particles
+                    positions[i3] += velocities[i3];
+                    positions[i3 + 1] += velocities[i3 + 1];
+                    positions[i3 + 2] += velocities[i3 + 2];
+                    
+                    // Push particles away from center text area (avoid overlapping text)
+                    const distanceFromCenter = Math.sqrt(positions[i3] * positions[i3] + positions[i3 + 1] * positions[i3 + 1]);
+                    if (distanceFromCenter < 30 && Math.abs(positions[i3 + 1]) < 20) {
+                        // Push particles to the sides if they're near the text area
+                        velocities[i3] += positions[i3] > 0 ? 0.02 : -0.02;
+                        velocities[i3 + 1] += Math.random() > 0.5 ? 0.01 : -0.01;
+                    }
+                    
+                } else if (lifetimes[i] < 500) {
+                    // Fading phase - particles gradually disappear
+                    const fadeProgress = (lifetimes[i] - 400) / 100;
+                    scales[i] = 0.5 * (1 - fadeProgress);
+                    colors[i3 + 1] *= (1 - fadeProgress * 0.5);
+                    colors[i3 + 2] *= (1 - fadeProgress * 0.5);
+                    
+                    positions[i3] += velocities[i3];
+                    positions[i3 + 1] += velocities[i3 + 1];
+                    positions[i3 + 2] += velocities[i3 + 2];
+                } else {
+                    // Reset particle - respawn from center
+                    lifetimes[i] = 0;
+                    scales[i] = 0;
+                    
+                    // Respawn near center with slight randomness
+                    const spawnRadius = 5 + Math.random() * 10;
+                    const theta = Math.random() * Math.PI * 2;
+                    const phi = Math.random() * Math.PI;
+                    
+                    positions[i3] = spawnRadius * Math.sin(phi) * Math.cos(theta);
+                    positions[i3 + 1] = spawnRadius * Math.sin(phi) * Math.sin(theta);
+                    positions[i3 + 2] = spawnRadius * Math.cos(phi);
+                    
+                    // New velocity direction (outward with side bias)
+                    const speed = 0.2 + Math.random() * 0.4;
+                    velocities[i3] = (positions[i3] / spawnRadius) * speed + (Math.random() - 0.5) * 0.3;
+                    velocities[i3 + 1] = (positions[i3 + 1] / spawnRadius) * speed + (Math.random() - 0.5) * 0.2;
+                    velocities[i3 + 2] = (positions[i3 + 2] / spawnRadius) * speed + (Math.random() - 0.5) * 0.2;
+                    
+                    // Reset colors
+                    colors[i3] = 0;
+                    colors[i3 + 1] = 0.6 + Math.random() * 0.4;
+                    colors[i3 + 2] = 0.8 + Math.random() * 0.2;
+                }
+            }
+            
+            // Update geometry
+            particles.geometry.attributes.position.needsUpdate = true;
+            particles.geometry.attributes.color.needsUpdate = true;
+            
+            // Very subtle rotation
+            particles.rotation.y += 0.001;
+            
+            // Gentle mouse interaction (much more subtle)
+            camera.position.x += (mouseX * 2 - camera.position.x) * 0.02;
+            camera.position.y += (-mouseY * 2 - camera.position.y) * 0.02;
+            camera.lookAt(0, 0, 0);
+            
+            renderer.render(scene, camera);
+        }
+        
+        // Mouse movement tracking
+        document.addEventListener('mousemove', (event) => {
+            mouseX = (event.clientX / window.innerWidth) * 2 - 1;
+            mouseY = (event.clientY / window.innerHeight) * 2 - 1;
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (camera && renderer) {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            }
+        });
+        
+        // Initialize when page loads
+        window.addEventListener('load', initParticleField);
+        
+        // Smooth scrolling for buttons
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 
 
 </body>
