@@ -9035,9 +9035,18 @@ border-color: var(--clr-theme-primary);
   z-index: 1;
   margin-bottom: 11px;
 }
+.prject-banner{
+
+  border-radius: 20px;
+}
 @media (max-width: 480px) {
   .eb_h3-section-subtitle {
     font-size: 14px;
+  }
+  .prject-banner{
+    height: 300px!important;
+    width: 100%;
+    object-fit: cover;
   }
 }
 .eb_h3-section-subtitle::before {
@@ -9050,7 +9059,7 @@ border-color: var(--clr-theme-primary);
   height: 6px;
   content: "";
   border-radius: 20px;
-  background: #9DFF20;
+  background: #1066A8;
 }
 .eb_h3-section-title {
   color: #000;
