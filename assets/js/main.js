@@ -266,6 +266,7 @@ HomeDigital.from(split_solutions.chars, { duration: 1, x: 100, autoAlpha: 0, sta
 ////////////////////////////////////////////////////////////////////////////////
 // 11. Image SlideUp
 
+if (document.querySelector('.tp_image_slideUp')){
 gsap.set(".tp_image_slideUp", { y: 100, opacity: 0 });
 gsap.to(".tp_image_slideUp", {
     scrollTrigger: {
@@ -282,6 +283,7 @@ gsap.to(".tp_image_slideUp", {
     each: 0.2
     }
 });
+}
 
 
 /////////////////////////////////////////////////////
@@ -866,6 +868,7 @@ $("#program-text-ticker").bxSlider({
 
 /////////////////////////////////////////////////////
 // 20. video Animation
+if (document.querySelector('.tp_image_slideUp')){
 if (device_width > 991) {
 	gsap.set(".grow", { scale: .8, });
 	let imageTl_8 = gsap.timeline({
@@ -882,6 +885,7 @@ if (device_width > 991) {
 		scale: 1,
 		duration: 1.5
 	});
+}
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -958,3 +962,150 @@ function followImageCursor(event, serviceImgItem) {
 });
 
 })(jQuery);
+
+
+/***************Client section*************************** */
+// Initialize WOW.js for scroll animations
+        new WOW().init();
+
+        // Initialize Swiper
+        const clientSwiper = new Swiper('.client-slider', {
+            // Basic settings
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            loop: true,
+            /*  grabCursor: true,*/
+
+            // Autoplay settings
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+
+            },
+
+            // Speed settings
+            speed: 5000,
+            allowTouchMove: false,
+
+            // Smooth continuous sliding
+            freeMode: true,
+            freeModeMomentum: false,
+
+            // Responsive breakpoints
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 25,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 35,
+                },
+                1200: {
+                    slidesPerView: 6,
+                    spaceBetween: 40,
+                }
+            },
+
+            // Accessibility
+            a11y: {
+                prevSlideMessage: 'Previous client',
+                nextSlideMessage: 'Next client',
+            },
+
+            // Events
+            on: {
+                init: function () {
+                    console.log('Client slider initialized');
+                },
+                slideChange: function () {
+                    // Add any custom logic on slide change
+                },
+            }
+        });
+
+		// VANTA Network Animation
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(() => {
+        if (document.querySelector('#vanta-bg') && typeof VANTA !== 'undefined') {
+            VANTA.NET({
+                el: "#vanta-bg",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x4f46e5, // Purple color to match your theme
+                backgroundColor: 0x1e293b, // Dark background
+                points: 8.00,
+                maxDistance: 23.00,
+                spacing: 18.00
+            });
+            console.log('VANTA network initialized');
+        }
+    }, 500); // Small delay to ensure everything loads
+});
+        // Pause autoplay on hover
+        const sliderContainer = document.querySelector('.client-slider');
+
+        sliderContainer.addEventListener('mouseenter', () => {
+            clientSwiper.autoplay.stop();
+        });
+
+        sliderContainer.addEventListener('mouseleave', () => {
+            clientSwiper.autoplay.start();
+        });
+
+        // Handle image loading
+        const clientImages = document.querySelectorAll('.client-logo img');
+
+        clientImages.forEach(img => {
+            const logoContainer = img.closest('.client-logo');
+
+            // Add loading class
+            logoContainer.classList.add('loading');
+
+            img.addEventListener('load', () => {
+                logoContainer.classList.remove('loading');
+            });
+
+            img.addEventListener('error', () => {
+                logoContainer.classList.remove('loading');
+                // You can add fallback image here
+                img.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjRjBGMEYwIi8+CjxwYXRoIGQ9Ik0zNSA0MEM0MC41MjI4IDQwIDQ1IDM1LjUyMjggNDUgMzBDNDUgMjQuNDc3MiA0MC41MjI4IDIwIDM1IDIwQzI5LjQ3NzIgMjAgMjUgMjQuNDc3MiAyNSAzMEMyNSAzNS41MjI4IDI5LjQ3NzIgNDAgMzUgNDAiIGZpbGw9IiNDQ0NDQ0MiLz4KPHA+Tm8gSW1hZ2U8L3A+Cjwvc3ZnPgo=';
+            });
+        });
+
+        // Add intersection observer for performance
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        clientSwiper.autoplay.start();
+                    } else {
+                        clientSwiper.autoplay.stop();
+                    }
+                });
+            });
+
+            observer.observe(sliderContainer);
+        }
+
+        // Handle window resize
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                clientSwiper.update();
+            }, 100);
+        });
