@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="description" content="html template">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Asad">
+    <meta name="author" content="Trivlogic">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Embum - Business Consulting and Business Solutions Template</title>
+    <title>Trivlogic-Home page</title>
 
     <link rel="icon" href="assets/images/favicon.png">
     <link rel="stylesheet"  href="assets/css/all.min.css"> 
@@ -21,9 +21,7 @@
     <link rel="stylesheet"  href="assets/css/magnific-popup.css"> 
     <link rel="stylesheet"  href="assets/css/main.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-
- 
+      <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
     
 
   </head>
@@ -59,7 +57,7 @@
                     <div class="sidebar-logo">
                         <a href="index.html">                          
 
-                            <img src="assets/images/logo/logo.webp"   alt="<%= siteName || 'Triv Logic' %>">
+                            <img src="/assets/images/hero/trivlogic-logo-whiteback-removebg.png"   alt="<%= siteName || 'Triv Logic' %>">
                            
                         </a>
                     </div>
@@ -111,11 +109,12 @@
                                 <div class="col-xl-2 col-lg-2 col-6">
                                     <div class="eb_h2-header-logo">
                                         <a href="#">
-                                           <img src="assets/images/logo/logo.webp"   alt="<%= siteName || 'Triv Logic' %>">
+                                           <img class="header-logo" src="/assets/images/hero/trivlogic-logo-whiteback-removebg.png"   alt="<%= siteName || 'Triv Logic' %>">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-xl-7 col-lg-7 d-none d-lg-block">
+
                                     <div class="eb_h2-header-menu">
                                         <nav id="mobile-menu">
                                             <ul>
@@ -137,9 +136,7 @@
                                                         
                                                     </ul>
                                             </li>
-
-
-                                                <li> <a href="index.html">Home</a> </li> 
+                                                
                                                 <li class="menu-has-child">
                                                     <a href="#">Project</a>
                                                     <ul class="submenu">
@@ -1229,10 +1226,36 @@
 
 
 
+
+
             </div>
         </div>
     </div>
 
+    <!-- Floating contact icons -->
+  <div class="edug-contact-icons" id="contactIcons">
+    <a href="https://wa.me/+918655897610" target="_blank" class="edug-contact-icon" data-tooltip="Chat on WhatsApp">
+      <i class="lni lni-whatsapp"></i>
+    </a>
+    <a href="mailto:info@eduglobal.in" class="edug-contact-icon" data-tooltip="Send us an Email">
+      <i class="lni lni-envelope"></i>
+    </a>
+    <a href="tel:+918655897610" class="edug-contact-icon" data-tooltip="Call us Now">
+      <i class="lni lni-phone"></i>
+    </a>
+    <a href="#" class="edug-contact-icon" data-tooltip="Live Chat">
+      <i class="lni lni-comments"></i>
+    </a>
+  </div>
+
+  <!-- Back to top with progress -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg class="progress-ring" width="60" height="60">
+      <circle class="progress-ring-bg" cx="30" cy="30" r="26"/>
+      <circle class="progress-ring-fill" cx="30" cy="30" r="26"/>
+    </svg>
+    <i class="lni lni-arrow-up"></i>
+  </button>
 
     <!-- jQuery Js -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
@@ -1252,7 +1275,39 @@
     <script src="assets/js/main.js"></script>
 
 
+  <script>
+    const backToTopBtn = document.getElementById('backToTop');
+    const contactIcons = document.getElementById('contactIcons');
+    const progressCircle = document.querySelector('.progress-ring-fill');
+    const radius = 26;
+    const circumference = 2 * Math.PI * radius;
 
+    progressCircle.style.strokeDasharray = `${circumference}`;
+    progressCircle.style.strokeDashoffset = `${circumference}`;
+
+    function updateScrollProgress() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollProgress = scrollTop / scrollHeight;
+
+      const offset = circumference - scrollProgress * circumference;
+      progressCircle.style.strokeDashoffset = offset;
+
+      if (scrollTop > 300) {
+        backToTopBtn.classList.add('visible');
+        contactIcons.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+        contactIcons.classList.remove('visible');
+      }
+    }
+
+    window.addEventListener('scroll', updateScrollProgress);
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 
 
 <script>
@@ -1491,6 +1546,21 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     </script>
 
+   <script>
+    window.addEventListener("scroll", function () {
+  const header = document.querySelector(".eb_h3-header-main");
+  const logo = document.querySelector(".header-logo");
+
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+    logo.src = "/assets/images/hero/trivlogic-logo-blue-background-removebg.png"; // blue bg logo
+  } else {
+    header.classList.remove("scrolled");
+    logo.src = "/assets/images/hero/trivlogic-logo-whiteback-removebg.png"; // transparent logo
+  }
+});
+
+ </script>
 
 </body>
 
