@@ -212,6 +212,8 @@ Animation Declaration
     transform: rotate(360deg);
   }
 }
+
+
 body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -1988,6 +1990,24 @@ i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
   color: #101010;
 }
 
+
+/**********preloader css start**********/
+
+
+
+.loader-logo {
+  width: 200px;             /* adjust size */
+  height: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/*
+
 .loader-wrap {
   height: 100vh;
   background: var(--clr-theme-primary-2);
@@ -2003,6 +2023,21 @@ i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
   position: fixed;
   width: 100%;
   z-index: 99;
+}*/
+
+.loader-wrap {
+  height: 100vh;
+  width: 100%;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+   transition: opacity .15s ease, visibility 0s linear .15s;
+  
 }
 
 .loader {
@@ -2011,6 +2046,8 @@ i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
   height: 100px;
   z-index: 9;
 }
+
+/*
 .loader__bar {
   position: absolute;
   bottom: 0;
@@ -2421,7 +2458,7 @@ i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
   }
-}
+}*/
 /* ///////////////////////////////////////////////////////////
 02. header
 /////////////////////////////////////////////////////////// */
