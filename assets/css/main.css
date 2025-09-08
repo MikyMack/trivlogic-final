@@ -9713,7 +9713,9 @@ border-color: var(--clr-theme-primary);
             text-decoration: none;
             transition: color 0.3s ease;
         }
-        
+        .prj-main{
+          margin-top: 15rem;
+        }
         .banner-breadcrumb a:hover {
             color: #a29bfe;
         }
@@ -9843,6 +9845,9 @@ border-color: var(--clr-theme-primary);
                 padding: 10px 25px;
                 font-size: 0.85rem;
             }
+                  .prj-main{
+          margin-top: 10rem;
+        }
         }
         
         /* Animation for elements */
