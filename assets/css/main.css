@@ -9637,18 +9637,14 @@ border-color: var(--clr-theme-primary);
 /////////////////////////////////////////////////////////// */
 .eb-breadcrumb-area {
   background-color: #f5f5fb;
-  margin: 0 24px;
+
   border-radius: 20px;
   position: relative;
   z-index: 1;
  
 }
 .eb-breadcrumb-wrap {
-  max-width: 1630px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+
   padding-top: 203px;
 }
 @media (max-width: 991px) {
@@ -9661,13 +9657,254 @@ border-color: var(--clr-theme-primary);
   z-index: auto;
   margin-top: -35px;
 }
+     .video-banner-container {
+            position: relative;
+            width: 100%;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 0;
+            overflow: hidden;
+        }
+        
+        .video-banner-wrapper {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 3;
+        }
+        
+        .banner-content-section {
+            color: #fff;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 3;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 12px;
+            backdrop-filter: blur(5px);
+            max-width: 600px;
+            margin-top: 40px;
+        }
+        
+        .banner-main-heading {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: #fff;
+            text-transform: capitalize;
+            line-height: 1.2;
+        }
+        
+        .banner-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
+  
+        
+        .banner-breadcrumb a {
+            color: #1066A8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .banner-breadcrumb a:hover {
+            color: #a29bfe;
+        }
+        
+        .banner-breadcrumb span {
+            color: #dfe6e9;
+        }
+        
+        .banner-breadcrumb i {
+            font-size: 0.8rem;
+            color: #b2bec3;
+        }
+        
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            overflow: hidden;
+        }
+        
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+         
+            z-index: 2;
+        }
+        .details-img{
+          height: 200px!important;
+          object-fit: cover;
+        }
+        .banner-description {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #f1f1f1;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 35px;
+            background: #1066A8;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(108, 92, 231, 0.4);
+        }
+        
+        .cta-button:hover {
+            background: #1066A8;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(51, 99, 229, 0.6);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .banner-main-heading {
+                font-size: 3rem;
+            }
+            
+            .banner-content-section {
+                padding: 25px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .video-banner-container {
+                min-height: 75vh;
+                padding: 60px 0;
+            }
+            
+            .banner-main-heading {
+                font-size: 2.5rem;
+            }
+            
+            .banner-description {
+                font-size: 1.1rem;
+            }
+            
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 0.9rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .banner-main-heading {
+                font-size: 2rem;
+            }
+            
+            .banner-content-section {
+                padding: 20px;
+            }
+            
+            .banner-breadcrumb {
+                font-size: .6rem;
+            }
+            
+            .banner-description {
+                font-size: 1rem;
+            }
+            
+            .cta-button {
+                padding: 10px 25px;
+                font-size: 0.85rem;
+            }
+        }
+        
+        /* Animation for elements */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-content {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        .content-delay-1 {
+            animation-delay: 0.3s;
+        }
+        
+        .content-delay-2 {
+            animation-delay: 0.6s;
+        }
+        
+        .content-delay-3 {
+            animation-delay: 0.9s;
+        }
+.about_revel_anim{
+  height: 500px;
+  object-fit: cover;
+}
+.about_revel_anim_two{
+  height: 400px;
+    object-fit: cover;
+}
+.ser-detls-img{
+  object-fit: cover;
+
+}
+@media (max-width: 480px) {
+.about_revel_anim{
+  height: 300px;
+  object-fit: cover;
+}
+.about_revel_anim_two{
+  height: 300px;
+    object-fit: cover;
+}
+}
 @media (max-width: 767px) {
   .eb-breadcrumb-img {
     margin-top: 0;
   }
+  .abt-main{
+  margin-top: 7rem;
 }
 .eb-breadcrumb-img img {
   width: 100%;
+  height: 320px!important;
+}
+}
+.abt-main{
+  margin-top: 5rem;
+}
+.eb-breadcrumb-img img {
+  width: 100%;
+  height: 400px;
 }
 .eb-breadcrumb-content {
   position: relative;
