@@ -10,7 +10,7 @@
 
     <title>Service Details -Mobile App Development</title>
 
-    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="icon" href="assets/images/hero/trivlogic-logo-blue-background-removebg.png">
     <link rel="stylesheet"  href="assets/css/all.min.css"> 
     <link rel="stylesheet"  href="assets/css/bootstrap.min.css"> 
     <link rel="stylesheet"  href="assets/css/swiper-bundle.min.css"> 
@@ -39,7 +39,7 @@
             <div class="row align-items-center">
                 <div class="col-xl-6 col-8">
                     <div class="sidebar-logo">
-                        <a href="index.html"><img src="assets/images/logo/w-logo-2.png" alt="logo-img"></a>
+                        <a href="index.html"><img src="assets/images/logo/logo.webp" alt="logo-img"></a>
                     </div>
                 </div>
                 <div class="col-xl-6 col-4">
@@ -57,9 +57,14 @@
         <div class="sidebar-contact-wrapper mt-40">
             <div class="sidebar-contact mb-40">
                 <h4 class="sidebar-contact-title">Contact Info</h4>
-                <span class="sidebar-address"><i class="fal fa-map-marker-alt"></i><span>4929 Thorn Street Crow heart, WY 82512</span> </span>
-                <a href="tel:+1(251)410-1010"><i class="fal fa-phone"></i><span>+1 (251) 410-1010</span></a>
-                <a href="mailto:example@gmail.com" class="theme-3"><i class="fal fa-envelope"></i><span><span>example@gmail.com</span></span></a>   
+                <span class="sidebar-address"><i class="fal fa-map-marker-alt"></i><span>Fortune Spaces,
+SP Heights Western Wing, S.P Lane, Enchakal, Vallakadavu P.O
+Trivandrum-695008</span> </span>
+                <a href="tel:+918848609311"><i class="fal fa-phone"></i><span>
++91 8848 609 311</span></a>
+        <a href="tel:+918123010000"><i class="fal fa-phone"></i><span>
++91 8123 010 000</span></a>
+                <a href="mailto:info@trivlogic.com" class="theme-3"><i class="fal fa-envelope"></i><span><span>info@trivlogic.com</span></span></a>   
             </div>
 
             <div class="sidebar-social mt-40 mb-30">
@@ -74,14 +79,23 @@
     <!-- sidebar-information-area-end -->
 
       <!-- Start Main Header -->
-                <header class="eb_inner-header-area">
-                    <div class="eb_inner-header-main">
-                        <div class="eb_inner-header-logo">
-                            <a href="index.html"><img src="/assets/images/logo/triangle-png-logo-removebg.png" alt=""></a>
-                        </div>
-                        <div class="eb_inner-header-menu">
-                            <nav id="mobile-menu">
-                               <ul>
+                 <header class="eb_h3-header-area">
+                
+
+                    <div class="eb_h3-header-main">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-xl-2 col-lg-2 col-6">
+                                    <div class="eb_h2-header-logo">
+                                        <a href="#">
+                                           <img src="assets/images/logo/logo.webp"   alt="<%= siteName || 'Triv Logic' %>">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-7 d-none d-lg-block">
+                                    <div class="eb_h2-header-menu">
+                                        <nav id="mobile-menu">
+                                            <ul>
                                                 
                                            <li> <a href="index.html">Home</a> </li>                                    
                                                      <li> <a href="about.html">About</a> </li>    
@@ -100,7 +114,9 @@
                                                         
                                                     </ul>
                                             </li>
-                                                
+
+
+                                                <li> <a href="index.html">Home</a> </li> 
                                                 <li class="menu-has-child">
                                                     <a href="#">Project</a>
                                                     <ul class="submenu">
@@ -112,23 +128,28 @@
                                                     <a href="#">News</a>
                                                     <ul class="submenu">
                                                         <li><a href="blog.html">News</a></li>
-                                                        <li><a href="blog-details.html">News Details</a></li>
+                                                        <li><a href="projectDetails.html">News Details</a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="career.html">Career</a></li>
                                                 <li><a href="contact.html">Contact</a></li>
                                                  
                                             </ul>
-                            </nav>
-                        </div>
-                        <div class="eb_inner-header-action">
-                            <a href="#" class="eb_inner-header-btn">Get in Touch<i class="fa-regular fa-arrow-up-right"></i></a>
-                            <div class="eb_inner-header-menubar side-toggle">
-                                <span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </span>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-6">
+                                    <div class="eb_h2-header-action">
+                                        <a href="#" class="eb_h3-theme-btn">Get a Quote</a>
+                                        <div class="eb_h4-menubar side-toggle d-lg-none">
+                                            <span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -136,193 +157,206 @@
                 <!-- Start Main Header -->
 
                 <!-- breadcrumb area start -->
-                <section class="eb-breadcrumb-area">
-                    <div class="eb-breadcrumb-wrap">
-                        <div class="eb-breadcrumb-content">
-                            <h1 class="heading__reveal_anim">Service Details</h1>
-                            <div class="eb-breadcrumb-list subtitle__reveal_anim">
-                                <a href="#">Home</a>
-                                <span>Service Details</span>
-                            </div>
-                        </div>
-                        <div class="eb-breadcrumb-img">
-                            <img src="assets/images/bg/breadcrumb.png" alt="">
-                        </div>
-                        <img src="assets/images/bg/404-shape-1.png" alt="" class="eb-breadcrumb-shape-1">
-                        <img src="assets/images/bg/404-shape-2.png" alt="" class="eb-breadcrumb-shape-2">
-                        <img src="assets/images/bg/404-shape-3.html" alt="" class="eb-breadcrumb-shape-3">
-                    </div>
-                </section>
+<section class="video-banner-container">
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="assets/videos/mob.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div class="video-overlay"></div>
+    
+    <div class="video-banner-wrapper">
+        <div class="banner-content-section">
+            <h1 class="banner-main-heading animate-content">Mobile App Development</h1>
+            
+            <div class="banner-breadcrumb animate-content content-delay-1">
+                <a href="#"><i class="fas fa-home"></i> Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Services</span>
+                <i class="fas fa-chevron-right"></i>
+                <span>Mobile App Development</span>
+            </div>
+            
+            <p class="banner-description animate-content content-delay-2">
+                Build powerful, user-friendly, and scalable mobile applications tailored to your business needs. 
+                From concept to launch, our expert team delivers innovative solutions for iOS and Android platforms.
+            </p>
+            
+            <a href="contact.html" class="cta-button animate-content content-delay-3">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
 
-    <section class="tj-blog-section section-gap">
-        <div class="container">
-            <div class="row row-gap-5">
-                <div class="col-lg-8">
-                    <div class="post-details-wrapper">
-                        <div class="blog-images">
-                            <div class="image-placeholder">
-                               <img src="/assets/images/service/website-dev.png" alt="">
-                            </div>
+<section class="tj-blog-section section-gap ">
+    <div class="container">
+        <div class="row row-gap-5">
+            <div class="col-lg-8">
+                <div class="post-details-wrapper">
+                    <div class="blog-images">
+                        <div class="image-placeholder">
+                           <img src="/assets/images/service/mobiledev.jpg" alt="Mobile App Development">
                         </div>
-                        <div class="blog-text">
-                            <h2 class="title">Transforming Ideas into Digital Experiences with Custom Web Development Solutions</h2>
-                            <h5 class="subtitle"> We craft high-performance, scalable web applications that drive business growth and deliver exceptional user experiences. From responsive websites to complex web platforms, our expert developers bring your vision to life with cutting-edge technology and innovative design.</h5>
-                            <p>At Triv Logic, we understand that your website is more than just a digital presence—it's the cornerstone of your business growth. Our comprehensive web development services combine strategic planning, modern frameworks, and user-centric design to create powerful digital solutions that engage your audience and accelerate your success. Whether you're launching a startup, scaling an enterprise, or revolutionizing an industry, we deliver robust web applications tailored to your unique business objectives.</p>
-                            <p>With deep expertise across the full technology stack, we don't just build websites—we engineer digital ecosystems that evolve with your business. Our agile development process ensures rapid deployment without compromising quality, while our focus on performance optimization, security, and scalability positions your platform for long-term success in an increasingly competitive digital landscape.   </p>              
-                                <ul>
-                                <li><span><i class="fas fa-check"></i></span>Strategic discovery and technical consultation</li>
-                                <li><span><i class="fas fa-check"></i></span> Comprehensive project roadmap and timeline planning</li>
-                                <li><span><i class="fas fa-check"></i></span> Expert development team and dedicated project management</li>
-                                <li><span><i class="fas fa-check"></i></span> Quality assurance and rigorous testing protocols</li>
-                                <li><span><i class="fas fa-check"></i></span>Ongoing maintenance and technical support</li>
-                                <li><span><i class="fas fa-check"></i></span>Performance optimization and security monitoring</li>
-                                <li><span><i class="fas fa-check"></i></span> Scalable architecture for future growth</li>
-                            </ul>
-                            <div class="images-wrap">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="image-box">
-                                            <div class="image-placeholder-small">
-                                                <i class="fas fa-laptop-code fa-2x"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="image-box">
-                                            <div class="image-placeholder-small">
-                                                <i class="fas fa-mobile-alt fa-2x"></i>
-                                            </div>
+                    </div>
+                    <div class="blog-text">
+                        <h2 class="title">Empowering Businesses with Next-Gen Mobile App Development</h2>
+                        <h5 class="subtitle">We design and build powerful, scalable, and intuitive mobile applications that engage users and accelerate growth. From native iOS & Android apps to cross-platform solutions, our expert team ensures seamless performance and exceptional user experiences.</h5>
+                        <p>At <b>Trivlogic Pvt.Ltd.</b>, we believe mobile is the future of digital. Our mobile app development services help businesses stay ahead in a mobile-first world by delivering feature-rich applications tailored to your brand and customer needs. Whether you need an app to boost productivity, improve customer engagement, or launch a new product, we create custom solutions that make a real impact.</p>
+                        <p>Our development approach focuses on innovation, usability, and long-term scalability. With expertise in native (Swift, Kotlin) and cross-platform frameworks (Flutter, React Native), we craft apps that deliver seamless performance across devices. Combined with rigorous testing and performance optimization, we ensure your app is secure, fast, and ready for the future.</p>              
+                            <ul>
+                            <li><span><i class="fas fa-check"></i></span> Native & cross-platform mobile app development</li>
+                            <li><span><i class="fas fa-check"></i></span> User-centric design & engaging UI/UX</li>
+                            <li><span><i class="fas fa-check"></i></span> Integration with APIs, CRMs, and third-party tools</li>
+                            <li><span><i class="fas fa-check"></i></span> Agile development process & rapid prototyping</li>
+                            <li><span><i class="fas fa-check"></i></span> Rigorous quality assurance & performance testing</li>
+                            <li><span><i class="fas fa-check"></i></span> Post-launch maintenance & support</li>
+                            <li><span><i class="fas fa-check"></i></span> Scalable architecture for long-term growth</li>
+                        </ul>
+                        <div class="images-wrap">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="image-box">
+                                        <div class="image-placeholder-small">
+                                          <img src="assets/images/service/ser-1.jpg" class="details-img" alt="Trivlogic">  
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <h3>Our Comprehensive Web Development Approach</h3>
-                            
-                            <div class="details-content-box">
-                                <div class="service-details-item">
-                                    <span class="number">01.</span>
-                                    <div class="service-content">
-                                        <h4 class="title">Strategic Architecture & Planning</h4>
-                                        <h6 class="subtitle">"Foundation-First Development for Lasting Success"</h6>
-                                        <div class="desc">
-                                            <p>Our development process begins with comprehensive business analysis and technical architecture planning. We conduct thorough stakeholder interviews, competitor analysis, and user journey mapping to create a strategic blueprint that aligns technology choices with business objectives. This foundation-first approach ensures scalable, maintainable solutions that adapt to your evolving needs.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service-details-item">
-                                    <span class="number">02.</span>
-                                    <div class="service-content">
-                                        <h4 class="title"> Modern Tech Stack & Best Practices </h4>
-                                         <h6 class="subtitle">"Cutting-Edge Technology for Competitive Advantage"</h6> 
-                                        <div class="desc">
-                                            <p>We leverage industry-leading frameworks and technologies including React, Next.js, Node.js, and cloud-native solutions to build high-performance applications. Our development follows established best practices including clean code architecture, automated testing, CI/CD pipelines, and security-first principles to ensure robust, maintainable, and secure web solutions.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service-details-item">
-                                    <span class="number">03.</span>
-                                    <div class="service-content">
-                                        <h4 class="title">User-Centric Design & Experience</h4>
-                                        <h6 class="subtitle">"Intuitive Interfaces That Drive Engagement"</h6> 
-                                        <div class="desc">
-                                            <p>Beyond functionality, we prioritize user experience through responsive design, accessibility compliance, and performance optimization. Our UX-driven approach combines aesthetic appeal with intuitive navigation, ensuring your web application not only looks exceptional but delivers seamless interactions that convert visitors into customers and drive business growth.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <h3>Frequently asked questions</h3>
-                            <div class="accordion tj-faq style-2" id="faqOne">
-                                <div class="accordion-item active wow fadeInUp" data-wow-delay=".3s">
-                                    <button class="faq-title" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="true">What technologies do you use for web development? </button>
-                                    <div id="faq-1" class="collapse show" data-bs-parent="#faqOne">
-                                        <div class="accordion-body faq-text">
-                                            <p>We work with modern, industry-standard technologies including React, Node.js,express.js and various database solutions. Our tech stack selection depends on your project requirements, scalability needs, and long-term maintenance considerations.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
-                                    <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false"> How long does a typical web development project take? </button>
-                                    <div id="faq-2" class="collapse" data-bs-parent="#faqOne">
-                                        <div class="accordion-body faq-text">
-                                            <p>Project timelines vary based on complexity and scope. Simple websites typically take 4-6 weeks, while custom web applications can range from 8-16 weeks. We provide detailed project timelines during our initial consultation and maintain transparent communication throughout the development process.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
-                                    <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3" aria-expanded="false">Do you provide ongoing maintenance and support?</button>
-                                    <div id="faq-3" class="collapse" data-bs-parent="#faqOne">
-                                        <div class="accordion-body faq-text">
-                                            <p> Yes, we offer comprehensive maintenance packages including security updates, performance monitoring, bug fixes, and feature enhancements. Our support plans are tailored to your specific needs, ensuring your web application remains secure, fast, and up-to-date.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
-                                    <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-4" aria-expanded="false"> What is your development process and how involved will I be? </button>
-                                    <div id="faq-4" class="collapse" data-bs-parent="#faqOne">
-                                        <div class="accordion-body faq-text">
-                                            <p> We follow an agile development methodology with regular check-ins, progress demonstrations, and feedback sessions. You'll have access to a project portal for real-time updates, and we schedule weekly calls to ensure the project stays aligned with your vision and requirements.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
-                                    <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-5" aria-expanded="false"> Can you integrate with existing systems and third-party services?</button>
-                                    <div id="faq-5" class="collapse" data-bs-parent="#faqOne">
-                                        <div class="accordion-body faq-text">
-                                            <p>Absolutely. We specialize in API integrations, database migrations, and connecting your web application with existing business tools including CRMs, payment gateways, analytics platforms, and custom enterprise solutions.</p>
+                                <div class="col-sm-6">
+                                    <div class="image-box">
+                                        <div class="image-placeholder-small">
+                                           <img src="assets/images/service/ser-2.jpg" class="details-img" alt="Trivlogic">  
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tj-post__navigation mb-0">
-                            <!-- previous post -->
-                            <div class="tj-nav__post previous">
-                                <div class="tj-nav-post__nav prev_post">
-                                    <a href="#"><span><i class="fas fa-arrow-left"></i></span>Previous</a>
+                        <h3>Our Mobile App Development Approach</h3>
+                        
+                        <div class="details-content-box">
+                            <div class="service-details-item">
+                                <span class="number">01.</span>
+                                <div class="service-content">
+                                    <h4 class="title">Strategic Planning & Research</h4>
+                                    <h6 class="subtitle">"Building Apps Aligned with Business Goals"</h6>
+                                    <div class="desc">
+                                        <p>We start with a detailed discovery phase, analyzing your business objectives, target audience, and competitors. This helps us define a clear strategy and app roadmap to ensure your solution delivers maximum impact and ROI.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="tj-nav-post__grid">
-                                <a href="#"><i class="fas fa-th"></i></a>
-                            </div>
-                            <!-- next post -->
-                            <div class="tj-nav__post next">
-                                <div class="tj-nav-post__nav next_post">
-                                    <a href="#">Next<span><i class="fas fa-arrow-right"></i></span></a>
+                            <div class="service-details-item">
+                                <span class="number">02.</span>
+                                <div class="service-content">
+                                    <h4 class="title">Modern Tech Stack & Development</h4>
+                                    <h6 class="subtitle">"Future-Ready Mobile Solutions"</h6> 
+                                    <div class="desc">
+                                        <p>Our team leverages cutting-edge technologies such as Swift, Kotlin, Flutter, and React Native to build high-performance apps. We follow best practices like modular code architecture, CI/CD integration, and security-first development to deliver reliable, future-ready applications.</p>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="service-details-item">
+                                <span class="number">03.</span>
+                                <div class="service-content">
+                                    <h4 class="title">User-Centered Design & Testing</h4>
+                                    <h6 class="subtitle">"Engaging Interfaces, Seamless Experience"</h6> 
+                                    <div class="desc">
+                                        <p>Our apps are built with user experience at the core. We focus on responsive design, smooth navigation, and performance optimization. Each app undergoes extensive testing across devices to ensure flawless performance before launch.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Frequently asked questions</h3>
+                        <div class="accordion tj-faq style-2" id="faqOne">
+                            <div class="accordion-item active wow fadeInUp" data-wow-delay=".3s">
+                                <button class="faq-title" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="true">Which platforms do you develop mobile apps for?</button>
+                                <div id="faq-1" class="collapse show" data-bs-parent="#faqOne">
+                                    <div class="accordion-body faq-text">
+                                        <p>We develop apps for iOS, Android, and cross-platform frameworks like Flutter and React Native. Our approach depends on your business needs, audience, and budget.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                                <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false"> How long does it take to develop a mobile app? </button>
+                                <div id="faq-2" class="collapse" data-bs-parent="#faqOne">
+                                    <div class="accordion-body faq-text">
+                                        <p>Development time varies based on features and complexity. A simple app may take 6–8 weeks, while feature-rich applications can take 12–20 weeks. We provide clear timelines during project discussions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                                <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3" aria-expanded="false">Do you provide post-launch support and updates?</button>
+                                <div id="faq-3" class="collapse" data-bs-parent="#faqOne">
+                                    <div class="accordion-body faq-text">
+                                        <p>Yes, we offer ongoing support including bug fixes, security updates, performance monitoring, and feature enhancements to keep your app competitive and secure.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                                <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-4" aria-expanded="false">Can you integrate apps with our existing systems?</button>
+                                <div id="faq-4" class="collapse" data-bs-parent="#faqOne">
+                                    <div class="accordion-body faq-text">
+                                        <p>Absolutely. We specialize in integrating mobile apps with CRMs, ERPs, payment gateways, third-party APIs, and enterprise systems for seamless business operations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                                <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-5" aria-expanded="false">Will my app be scalable for future growth?</button>
+                                <div id="faq-5" class="collapse" data-bs-parent="#faqOne">
+                                    <div class="accordion-body faq-text">
+                                        <p>Yes. We design apps with scalability in mind, ensuring your application can handle future user growth, feature expansions, and market demands without performance issues.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tj-post__navigation mb-0">
+                        <!-- previous post -->
+                        <div class="tj-nav__post previous">
+                            <div class="tj-nav-post__nav prev_post">
+                                <a href="#"><span><i class="fas fa-arrow-left"></i></span>Previous</a>
+                            </div>
+                        </div>
+                        <div class="tj-nav-post__grid">
+                            <a href="#"><i class="fas fa-th"></i></a>
+                        </div>
+                        <!-- next post -->
+                        <div class="tj-nav__post next">
+                            <div class="tj-nav-post__nav next_post">
+                                <a href="#">Next<span><i class="fas fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="tj-main-sidebar sticky-lg-top">
-                        <div class="tj-sidebar-widget service-categories">
-                            <h4 class="widget-title">More services</h4>
-                            <ul>
-                                <li><a class="active" href="#">Digital Marketing<span class="icon"><i class="fas fa-arrow-right"></i></span></a></li>
-                                <li><a href="#">Software Development <span class="icon"><i class="fas fa-arrow-right"></i></span></a></li>
-                                <li><a href="#">Branding Solutions<span class="icon"><i class="fas fa-arrow-right"></i></span></a></li>
-                                <li><a href="#">SEO Optimization <span class="icon"><i class="fas fa-arrow-right"></i></span></a></li>
-                                <li><a href="#">Mobile App Development<span class="icon"><i class="fas fa-arrow-right"></i></span></a></li>
-                                <li><a href="#">Web Development<span class="icon"><i class="fas fa-arrow-right"></i></span></a></li>
-                            </ul>
-                        </div>
-                        <div class="tj-sidebar-widget widget-feature-item">
-                            <div class="feature-box">
-                                <div class="feature-content">
-                                    <h2 class="title">Transform with AI</h2>
-                                    <p class="desc">Specialize delivering AI-powered solution revolutionize the businesses.</p>
-                                    <a class="tj-primary-btn" href="#">
-                                        <div class="btn-inner">
-                                            <span class="btn-icon h-icon"><i class="fas fa-arrow-right"></i></span>
-                                            <span class="btn-text">Get Started</span>
-                                            <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="feature-images">
-                                    <div class="feature-placeholder">
-                                        <i class="fas fa-robot"></i>
+            </div>
+            <div class="col-lg-4">
+                <div class="tj-main-sidebar sticky-lg-top">
+                    <div class="tj-sidebar-widget service-categories">
+                        <h4 class="widget-title">More services</h4>
+                        <ul>
+                            <li><a href="#">Digital Marketing<span class="icon"><i class="fas fa-arrow-right"></i></span></a></li>
+                            <li><a href="#">Software Development <span class="icon"><i class="fas fa-arrow-right"></i></span></a></li>
+                            <li><a href="#">Branding Solutions<span class="icon"><i class="fas fa-arrow-right"></i></span></a></li>
+                            <li><a href="#">SEO Optimization <span class="icon"><i class="fas fa-arrow-right"></i></span></a></li>
+                            <li><a class="active" href="#">Mobile App Development<span class="icon"><i class="fas fa-arrow-right"></i></span></a></li>
+                            <li><a href="#">Web Development<span class="icon"><i class="fas fa-arrow-right"></i></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="tj-sidebar-widget widget-feature-item">
+                        <div class="feature-box">
+                            <div class="feature-content">
+                                <h2 class="title">Go Mobile with Triv Logic</h2>
+                                <p class="desc">Build next-gen mobile apps that engage, inspire, and transform your business.</p>
+                                <a class="tj-primary-btn" href="#">
+                                    <div class="btn-inner">
+                                        <span class="btn-icon h-icon"><i class="fas fa-arrow-right"></i></span>
+                                        <span class="btn-text">Get Started</span>
+                                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
                                     </div>
+                                </a>
+                            </div>
+                            <div class="feature-images">
+                                <div class="feature-placeholder">
+                                    <i class="fas fa-mobile-alt"></i>
                                 </div>
                             </div>
                         </div>
@@ -330,7 +364,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
      <!-- footer area start -->
 
