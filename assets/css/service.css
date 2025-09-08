@@ -1,20 +1,37 @@
     /* Bootstrap 5.1.3 Compatible CSS for Service Details Layout */
 
         /* Custom CSS Variables */
-        :root {
-            --primary-color: #007bff;
-            --primary-dark: #0056b3;
-            --success-color: #28a745;
-            --text-dark: #1a1a1a;
-            --text-muted: #666;
-            --bg-light: #f8f9fa;
-            --border-color: #e9ecef;
-            --shadow-light: 0 5px 20px rgba(0, 0, 0, 0.1);
-            --shadow-hover: 0 5px 15px rgba(0, 0, 0, 0.2);
-            --border-radius: 8px;
-            --border-radius-lg: 15px;
-        }
+       
 
+:root {
+    /* Core brand colors - enhanced for logo visibility */
+    --clr-common-white: #ffffff;
+    --clr-common-black: #1a202c; /* deeper dark for better contrast */
+    --clr-common-primary: #3182ce; /* blue that complements your logo */
+    --clr-common-gray: #718096;
+    --clr-common-border: #e2e8f0;
+    
+    /* Text colors */
+    --clr-body-heading: #1a202c; /* strong dark for headings */
+    --clr-body-text: #4a5568;
+    
+    /* Theme colors optimized for logo prominence */
+    --clr-theme-primary: #3182ce; /* primary blue - matches logo tone */
+    --clr-theme-primary-2: #2c5282; /* darker blue for hover states */
+    --clr-theme-primary-4: #bee3f8; /* light blue for accents */
+    --clr-theme-primary-5: #2b6cb0; /* medium blue for buttons */
+    
+    /* Background colors */
+    --clr-bg-gray: #f7fafc;
+    --clr-bg-gray-2: #edf2f7;
+    --clr-bg-gray-3: #cbd5e0;
+    
+    /* Special colors for better logo visibility */
+    --clr-logo-contrast-bg: #f8fafc; /* very light background behind logo */
+    --clr-network-primary: #4299e1; /* brighter blue for network lines */
+    --clr-network-secondary: #63b3ed; /* lighter blue for secondary network elements */
+    --clr-accent-bright: #38b2ac; /* teal accent for geometric shapes */
+}
         /* Override Bootstrap defaults where needed */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -596,3 +613,10 @@
             }
         }
     
+
+        .eb_h5-video-area{
+
+            margin-top:100px;
+            padding-bottom:100px;
+            padding-top:100px;
+        }
