@@ -39,13 +39,13 @@ window.addEventListener('load', function(){
 });*/
 	
 
-let preloader = document.getElementById("preloader");
+let preloader = document.querySelector(".loader-wrap");
 
 window.addEventListener("load", function() {
-  
-    preloader.style.opacity = "0";
-    preloader.style.visibility = "hidden";
-
+    if (preloader) {
+        preloader.style.opacity = "0";
+        preloader.style.visibility = "hidden";
+    }
 });
 
 ////////////////////////////////////////////////////////////////////////
@@ -1067,14 +1067,15 @@ document.addEventListener('DOMContentLoaded', function() {
 });
         // Pause autoplay on hover
         const sliderContainer = document.querySelector('.client-slider');
-
+        
+        if (sliderContainer) {
         sliderContainer.addEventListener('mouseenter', () => {
-            clientSwiper.autoplay.stop();
+        clientSwiper.autoplay.stop();
         });
-
         sliderContainer.addEventListener('mouseleave', () => {
-            clientSwiper.autoplay.start();
+        clientSwiper.autoplay.start();
         });
+        }
 
         // Handle image loading
         const clientImages = document.querySelectorAll('.client-logo img');
