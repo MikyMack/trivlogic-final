@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="html template">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Asad">
+    <meta name="author" content="Triv logic">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Embum - Business Consulting and Business Solutions Template</title>
+    <title> TrivLogic | Innovative Digital Solutions That Drive Business Growth </title>
 
     <link rel="icon" href="assets/images/favicon.png">
-    <link rel="stylesheet"  href="assets/css/all.min.css"> 
-    <link rel="stylesheet"  href="assets/css/bootstrap.min.css"> 
-    <link rel="stylesheet"  href="assets/css/swiper-bundle.min.css"> 
-    <link rel="stylesheet"  href="assets/css/meanmenu.css"> 
-    <link rel="stylesheet"  href="assets/css/nice-select.css"> 
-    <link rel="stylesheet"  href="assets/css/animate.min.css"> 
-    <link rel="stylesheet"  href="assets/css/magnific-popup.css"> 
-    <link rel="stylesheet"  href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+     <link rel="stylesheet" href="assets/css/career.css">
+      <link rel="stylesheet" href="assets/css/service.css">
 
-  </head>
-  <body>
+</head>
+
+<body>
+
+    <!-- preloader start -->
+    <div class="loader-wrap">
+        <div class="loader">
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__ball"></div>
+        </div>
+
+    </div>
+    <!-- preloader end -->
+
     
-    <!-- Preloader -->
-<div class="loader-wrap" id="preloader">
-  <img src="/assets/images/logo/preloader-logo.png" alt="Logo" class="loader-logo">
-</div>
-
-
     <!-- Cursor Animation -->
     <div class="cursor1"></div>
     <div class="cursor2"></div>
-
     <!-- sidebar-information-area-start -->
     <div class="sidebar-info side-info">
         <div class="sidebar-logo-wrapper mb-25">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-8">
                     <div class="sidebar-logo">
-                        <a href="index.html"><img src="assets/images/logo/w-logo-2.png" alt="logo-img"></a>
+                        <a href="index.html">
+
+                            <img src="/assets/images/hero/trivlogic-logo-whiteback-removebg.png"
+                                alt="<%= siteName || 'Triv Logic' %>">
+
+                        </a>
                     </div>
                 </div>
                 <div class="col-xl-6 col-4">
@@ -58,9 +74,25 @@
         <div class="sidebar-contact-wrapper mt-40">
             <div class="sidebar-contact mb-40">
                 <h4 class="sidebar-contact-title">Contact Info</h4>
-                <span class="sidebar-address"><i class="fal fa-map-marker-alt"></i><span>4929 Thorn Street Crow heart, WY 82512</span> </span>
-                <a href="tel:+1(251)410-1010"><i class="fal fa-phone"></i><span>+1 (251) 410-1010</span></a>
-                <a href="mailto:example@gmail.com" class="theme-3"><i class="fal fa-envelope"></i><span><span>example@gmail.com</span></span></a>   
+                <span class="sidebar-address">
+                    <i class="fal fa-map-marker-alt"></i>
+                    <span>India, UK</span>
+                </span>
+                <br>
+                <a href="tel:+918848609311" class="sidebar-phone">
+                    <i class="fal fa-phone"></i>
+                    <span>India: +91 8848 60 9311</span>
+                </a>
+                <br>
+                <a href="tel:+447771868301" class="sidebar-phone">
+                    <i class="fal fa-phone"></i>
+                    <span>UK: +44 7771 86 8301</span>
+                </a>
+                <br>
+                <a href="mailto:info@trivlogic.com" class="sidebar-email">
+                    <i class="fal fa-envelope"></i>
+                    <span>info@trivlogic.com</span>
+                </a>
             </div>
 
             <div class="sidebar-social mt-40 mb-30">
@@ -71,104 +103,124 @@
             </div>
         </div>
     </div>
+
+
     <div class="offcanvas-overlay"></div>
+
     <!-- sidebar-information-area-end -->
 
-
     <div class="has-smooth" id="has_smooth"></div>
-    
+
     <div id="smooth-wrapper">
         <div id="smooth-content">
             <div class="body-wrapper">
                 <!-- Start Main Header -->
-                <header class="eb_inner-header-area">
-                    <div class="eb_inner-header-main">
-                        <div class="eb_inner-header-logo">
-                            <a href="index.html"><img src="/assets/images/logo/triangle-png-logo-removebg.png" alt=""></a>
-                        </div>
-                        <div class="eb_inner-header-menu">
-                            <nav id="mobile-menu">
-                                <ul>
-                                    <li class="menu-has-child">
-                                        <a href="#">Home</a>
-                                        <ul class="submenu">
-                                            <li><a href="index.html">Marketing Agency</a></li>
-                                            <li><a href="index-2.html">Digital Agency</a></li>
-                                            <li><a href="index-3.html">Business Consulting</a></li>
-                                            <li><a href="index-4.html">Startup Agency</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-has-child">
-                                        <a href="#">Pages</a>
-                                        <ul class="submenu">
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="service.html">Service</a></li>
-                                            <li><a href="team.html">team</a></li>
-                                            <li><a href="price.html">Price</a></li>
-                                            <li><a href="testimonial.html">Testimonial</a></li>
-                                            <li><a href="faq.html">Faq</a></li>
-                                            <li><a href="404.html">404</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-has-child">
-                                        <a href="#">Project</a>
-                                        <ul class="submenu">
-                                            <li><a href="project-1.html">Project 1</a></li>
-                                            <li><a href="project-2.html">Project 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-has-child">
-                                        <a href="#">News</a>
-                                        <ul class="submenu">
-                                            <li><a href="blog.html">News</a></li>
-                                            <li><a href="blog-details.html">News Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="eb_inner-header-action">
-                            <a href="#" class="eb_inner-header-btn">Get in Touch<i class="fa-regular fa-arrow-up-right"></i></a>
-                            <div class="eb_inner-header-menubar side-toggle">
-                                <span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </span>
+                <header class="eb_h3-header-area">
+                    <div class="eb_h3-header-main">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-xl-2 col-lg-2 col-6">
+                                    <div class="eb_h2-header-logo">
+                                        <a href="#">
+                                            <img class="header-logo"
+                                                src="/assets/images/hero/trivlogic-logo-whiteback-removebg.png"
+                                                alt="<%= siteName || 'Triv Logic' %>">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-7 d-none d-lg-block">
+
+                                    <div class="eb_h2-header-menu">
+                                        <nav id="mobile-menu">
+                                            <ul>
+
+                                                <li> <a href="index.html">Home</a> </li>
+                                                <li> <a href="about.html">About</a> </li>
+
+
+
+                                                <li class="menu-has-child">
+                                                    <a href="service.html">Service</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="webdev-service.html">Web Development</a></li>
+                                                        <li><a href="software-dev-service.html">Software Development</a>
+                                                        </li>
+                                                        <li><a href="mobile-app-dev-service.html">Mobile App
+                                                                Development</a></li>
+                                                        <li><a href="digital-mark-service.html">Digital Marketing</a>
+                                                        </li>
+                                                        <li><a href="Branding-service.html">Branding</a></li>
+                                                        <li><a href="seo-service.html">SEO</a></li>
+
+                                                    </ul>
+                                                </li>
+
+                                              <li class="menu-has-child">
+                                                    <a href="#">Project</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="projects.html">Project </a></li>
+                                                        <li><a href="projectDetails.html">Project Details</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-has-child">
+                                                    <a href="#">News</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog.html">News</a></li>
+                                                        <li><a href="blog-details.html">News Details</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="career.html">Career</a></li>
+                                                <li><a href="contact.html">Contact</a></li>
+
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-6">
+                                    <div class="eb_h2-header-action">
+                                        <a href="#" class="eb_h3-theme-btn">Get a Quote</a>
+                                        <div class="eb_h4-menubar side-toggle d-lg-none">
+                                            <span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </header>
                 <!-- Start Main Header -->
 
-                <!-- breadcrumb area start -->
+
+               <!-- breadcrumb area start -->
                 <section class="eb-breadcrumb-area">
                     <div class="eb-breadcrumb-wrap">
                         <div class="eb-breadcrumb-content">
-                            <h1 class="heading__reveal_anim">Faqs</h1>
+                            <h1 class="heading__reveal_anim">FAQ</h1>
                             <div class="eb-breadcrumb-list subtitle__reveal_anim">
                                 <a href="#">Home</a>
-                                <span>Faqs</span>
+                                <span>faq</span>
                             </div>
                         </div>
-                        <div class="eb-breadcrumb-img">
-                            <img src="assets/images/bg/breadcrumb.png" alt="">
+                        <div style="margin-top: -14rem; height: 200px!important;" class="eb-breadcrumb-img">
+                            <img src="assets/images/about/bnr.jpg" alt="">
                         </div>
-                        <img src="assets/images/bg/404-shape-1.png" alt="" class="eb-breadcrumb-shape-1">
-                        <img src="assets/images/bg/404-shape-2.png" alt="" class="eb-breadcrumb-shape-2">
-                        <img src="assets/images/bg/404-shape-3.html" alt="" class="eb-breadcrumb-shape-3">
+
                     </div>
                 </section>
                 <!-- breadcrumb area end -->
 
+
                 <!-- faq area start -->
-                <section class="eb-faq-area pt-80 mb-110">
+                <section class="eb-faq-area pt-80 mb-110 mt-140">
                     <div class="container">
                         <div class="row align-items-end">
                             <div class="col-lg-6">
                                 <div class="eb-faq-img mr-30 mb-40 overflow-hidden">
-                                    <img src="assets/images/bg/faq.html" alt="" class="w-100 tp_img_reveal xPercentRight">
+                                    <img src="assets/images/bg/faq2.jpg" alt="" class="w-100 tp_img_reveal xPercentRight">
                                 </div>
                             </div>
                             <div class="col-lg-6">
