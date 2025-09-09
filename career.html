@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="description" content="html template">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Trivlogic">
+    <meta name="author" content="Triv logic">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Careers - Join Our Growing Team | TrivLogic</title>
+    <title> TrivLogic | Innovative Digital Solutions That Drive Business Growth </title>
 
     <link rel="icon" href="assets/images/favicon.png">
     <link rel="stylesheet" href="assets/css/all.min.css">
@@ -20,23 +20,95 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/career.css">
-
+     <link rel="stylesheet" href="assets/css/career.css">
+      <link rel="stylesheet" href="assets/css/service.css">
+      <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
 
 </head>
 
 <body>
 
+    <!-- preloader start -->
+    <div class="loader-wrap">
+        <div class="loader">
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__ball"></div>
+        </div>
 
-    <!-- Preloader -->
-<div class="loader-wrap" id="preloader">
-  <img src="/assets/images/logo/preloader-logo.png" alt="Logo" class="loader-logo">
-</div>
+    </div>
+    <!-- preloader end -->
 
+    
     <!-- Cursor Animation -->
     <div class="cursor1"></div>
     <div class="cursor2"></div>
+    <!-- sidebar-information-area-start -->
+    <div class="sidebar-info side-info">
+        <div class="sidebar-logo-wrapper mb-25">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-8">
+                    <div class="sidebar-logo">
+                        <a href="index.html">
 
+                            <img src="/assets/images/hero/trivlogic-logo-whiteback-removebg.png"
+                                alt="<%= siteName || 'Triv Logic' %>">
+
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-4">
+                    <div class="sidebar-close-wrapper text-end">
+                        <button class="sidebar-close side-info-close"><i class="fal fa-times"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-menu-wrapper fix">
+            <div class="mobile-menu"></div>
+        </div>
+
+        <div class="sidebar-contact-wrapper mt-40">
+            <div class="sidebar-contact mb-40">
+                <h4 class="sidebar-contact-title">Contact Info</h4>
+                <span class="sidebar-address">
+                    <i class="fal fa-map-marker-alt"></i>
+                    <span>India, UK</span>
+                </span>
+                <br>
+                <a href="tel:+918848609311" class="sidebar-phone">
+                    <i class="fal fa-phone"></i>
+                    <span>India: +91 8848 60 9311</span>
+                </a>
+                <br>
+                <a href="tel:+447771868301" class="sidebar-phone">
+                    <i class="fal fa-phone"></i>
+                    <span>UK: +44 7771 86 8301</span>
+                </a>
+                <br>
+                <a href="mailto:info@trivlogic.com" class="sidebar-email">
+                    <i class="fal fa-envelope"></i>
+                    <span>info@trivlogic.com</span>
+                </a>
+            </div>
+
+            <div class="sidebar-social mt-40 mb-30">
+                <a href="#" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank" class="youtube"><i class="fab fa-dribbble"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="offcanvas-overlay"></div>
+
+    <!-- sidebar-information-area-end -->
 
     <div class="has-smooth" id="has_smooth"></div>
 
@@ -44,64 +116,85 @@
         <div id="smooth-content">
             <div class="body-wrapper">
                 <!-- Start Main Header -->
-                <header class="eb_inner-header-area">
-                    <div class="eb_inner-header-main">
-                        <div class="eb_inner-header-logo">
-                            <a href="index.html"><img src="/assets/images/logo/triangle-png-logo-removebg.png" alt=""></a>
-                        </div>
-                        <div class="eb_inner-header-menu">
-                            <nav id="mobile-menu">
-                                <ul>
+                <header class="eb_h3-header-area">
+                    <div class="eb_h3-header-main">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-xl-2 col-lg-2 col-6">
+                                    <div class="eb_h2-header-logo">
+                                        <a href="#">
+                                            <img class="header-logo"
+                                                src="/assets/images/hero/trivlogic-logo-whiteback-removebg.png"
+                                                alt="<%= siteName || 'Triv Logic' %>">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-7 d-none d-lg-block">
 
-                                    <li> <a href="index.html">Home</a> </li>
-                                    <li> <a href="about.html">About</a> </li>
-                                    <li class="menu-has-child">
-                                        <a href="service.html">Service</a>
-                                        <ul class="submenu">
-                                            <li><a href="webdev-service.html">Web Development</a></li>
-                                            <li><a href="software-dev-service.html">Software Development</a></li>
-                                            <li><a href="mobile-app-dev-service.html">Mobile App Development</a></li>
-                                            <li><a href="digital-mark-service.html">Digital Marketing</a></li>
-                                            <li><a href="Branding-service.html">Branding</a></li>
-                                            <li><a href="seo-service.html">SEO</a></li>
+                                    <div class="eb_h2-header-menu">
+                                        <nav id="mobile-menu">
+                                            <ul>
 
-                                        </ul>
-                                    </li>
+                                                <li> <a href="index.html">Home</a> </li>
+                                                <li> <a href="about.html">About</a> </li>
 
-                                    <li class="menu-has-child">
-                                        <a href="#">Project</a>
-                                        <ul class="submenu">
-                                            <li><a href="project-1.html">Project 1</a></li>
-                                            <li><a href="project-2.html">Project 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-has-child">
-                                        <a href="#">News</a>
-                                        <ul class="submenu">
-                                            <li><a href="blog.html">News</a></li>
-                                            <li><a href="blog-details.html">News Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="career.html">Career</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
 
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="eb_inner-header-action">
-                            <a href="#" class="eb_inner-header-btn">Get in Touch<i
-                                    class="fa-regular fa-arrow-up-right"></i></a>
-                            <div class="eb_inner-header-menubar side-toggle">
-                                <span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </span>
+
+                                                <li class="menu-has-child">
+                                                    <a href="service.html">Service</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="webdev-service.html">Web Development</a></li>
+                                                        <li><a href="software-dev-service.html">Software Development</a>
+                                                        </li>
+                                                        <li><a href="mobile-app-dev-service.html">Mobile App
+                                                                Development</a></li>
+                                                        <li><a href="digital-mark-service.html">Digital Marketing</a>
+                                                        </li>
+                                                        <li><a href="Branding-service.html">Branding</a></li>
+                                                        <li><a href="seo-service.html">SEO</a></li>
+
+                                                    </ul>
+                                                </li>
+
+                                              <li class="menu-has-child">
+                                                    <a href="#">Project</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="projects.html">Project </a></li>
+                                                        <li><a href="projectDetails.html">Project Details</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-has-child">
+                                                    <a href="#">News</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog.html">News</a></li>
+                                                        <li><a href="blog-details.html">News Details</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="career.html">Career</a></li>
+                                                <li><a href="contact.html">Contact</a></li>
+
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-6">
+                                    <div class="eb_h2-header-action">
+                                        <a href="#" class="eb_h3-theme-btn">Get a Quote</a>
+                                        <div class="eb_h4-menubar side-toggle d-lg-none">
+                                            <span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </header>
-                <!-- Start Main Header -->
+                <!-- end Main Header -->
+
 
                 <!-- breadcrumb area start -->
                 <section class="eb-breadcrumb-area">
@@ -113,72 +206,15 @@
                                 <span>Career</span>
                             </div>
                         </div>
-                        <div class="eb-breadcrumb-img">
-                            <img src="assets/images/bg/breadcrumb.png" alt="">
+                        <div style="margin-top: -14rem; height: 200px!important;" class="eb-breadcrumb-img">
+                            <img src="assets/images/about/bnr.jpg" alt="">
                         </div>
-                        <img src="assets/images/bg/404-shape-1.png" alt="" class="eb-breadcrumb-shape-1">
-                        <img src="assets/images/bg/404-shape-2.png" alt="" class="eb-breadcrumb-shape-2">
-                        <img src="assets/images/bg/404-shape-3.png" alt="" class="eb-breadcrumb-shape-3">
+                      
                     </div>
                 </section>
                 <!-- breadcrumb area end -->
 
-                <section id="client" class="tj-client-section section-gap fadeInUp wow">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="client-content fadeInUp wow">
-                                    <h5 class="sec-title">
-                                        <span class="client-numbers"></span> Valued Clients Across the Globe
-                                    </h5>
-                                </div>
-
-                                <div class="swiper client-slider">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide client-item wow fadeInUp">
-                                            <div class="client-logo">
-                                                <img src="https://res.cloudinary.com/dskfq6hvj/image/upload/v1739367704/clients/huoxdl5eorkwouao8vq7.png"
-                                                    alt="Client Logo 1" loading="lazy">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide client-item wow fadeInUp">
-                                            <div class="client-logo">
-                                                <img src="https://res.cloudinary.com/dskfq6hvj/image/upload/v1739459189/clients/e0zzgfimj6p5na8rwhay.png"
-                                                    alt="Client Logo 2" loading="lazy">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide client-item wow fadeInUp">
-                                            <div class="client-logo">
-                                                <img src="https://res.cloudinary.com/dskfq6hvj/image/upload/v1739459085/clients/dewzczmk27tkpseqr56q.png"
-                                                    alt="Client Logo 3" loading="lazy">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide client-item wow fadeInUp">
-                                            <div class="client-logo">
-                                                <img src="https://res.cloudinary.com/dskfq6hvj/image/upload/v1739367930/clients/sbfsu4ccwnejcaqv1fyb.png"
-                                                    alt="Client Logo 4" loading="lazy">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide client-item wow fadeInUp">
-                                            <div class="client-logo">
-                                                <img src="https://res.cloudinary.com/dskfq6hvj/image/upload/v1736795391/clients/ypw7jaf1w1vbbn5spwv5.webp"
-                                                    alt="Client Logo 5" loading="lazy">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide client-item wow fadeInUp">
-                                            <div class="client-logo">
-                                                <img src="https://res.cloudinary.com/dskfq6hvj/image/upload/v1739459577/clients/iiad8ofza245dljnrn0k.png"
-                                                    alt="Client Logo 6" loading="lazy">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-
+                
 
                 <!-- Career Hero Section -->
                 <section class="career-hero">
@@ -200,83 +236,8 @@
 
                 <!-- End Career Hero Section -->
 
-                <!-- Company Culture Section -->
-                <section class="culture-section">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 text-center mb-5">
-                                <h2>Why Work With Us?</h2>
-                                <p class="lead">Experience a culture that values innovation, growth, and work-life
-                                    balance</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6 mb-4">
-                                <div class="culture-card">
-                                    <div class="culture-icon">
-                                        <i class="fas fa-rocket"></i>
-                                    </div>
-                                    <h4>Innovation First</h4>
-                                    <p>We embrace cutting-edge technologies and encourage creative problem-solving.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 mb-4">
-                                <div class="culture-card">
-                                    <div class="culture-icon">
-                                        <i class="fas fa-users"></i>
-                                    </div>
-                                    <h4>Collaborative Team</h4>
-                                    <p>Work with passionate professionals in a supportive, inclusive environment.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 mb-4">
-                                <div class="culture-card">
-                                    <div class="culture-icon">
-                                        <i class="fas fa-chart-line"></i>
-                                    </div>
-                                    <h4>Career Growth</h4>
-                                    <p>Continuous learning opportunities and clear career advancement paths.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 mb-4">
-                                <div class="culture-card">
-                                    <div class="culture-icon">
-                                        <i class="fas fa-balance-scale"></i>
-                                    </div>
-                                    <h4>Work-Life Balance</h4>
-                                    <p>Flexible working arrangements and comprehensive benefits package.</p>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Benefits Grid -->
-                        <div class="row mt-5">
-                            <div class="col-12">
-                                <h3 class="text-center mb-4">Our Benefits</h3>
-                                <div class="benefits-grid">
-                                    <div class="benefit-item">
-                                        <h5><i class="fas fa-laptop-code me-2"></i>Latest Technology</h5>
-                                        <p>Work with cutting-edge tools and technologies in a modern workspace.</p>
-                                    </div>
-                                    <div class="benefit-item">
-                                        <h5><i class="fas fa-graduation-cap me-2"></i>Learning & Development</h5>
-                                        <p>Access to training programs, certifications, and skill development
-                                            opportunities.</p>
-                                    </div>
-
-                                    <div class="benefit-item">
-                                        <h5><i class="fas fa-clock me-2"></i>Flexible Hours</h5>
-                                        <p>Flexible working hours and remote work options to maintain work-life balance.
-                                        </p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Current Openings Section -->
+                      <!-- Current Openings Section -->
                 <section class="py-5" id="current-openings">
                     <div class="container">
                         <div class="row">
@@ -828,13 +789,152 @@
                     </div>
                 </div>
 
-                <!-- Footer area start -->
+                <!--End of job openings section-->
+
+                <!-- Company Culture Section -->
+                <section class="culture-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center mb-5">
+                                <h2>Why Work With Us?</h2>
+                                <p class="lead">Experience a culture that values innovation, growth, and work-life
+                                    balance</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="culture-card">
+                                    <div class="culture-icon">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                    <h4>Innovation First</h4>
+                                    <p>We embrace cutting-edge technologies and encourage creative problem-solving.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="culture-card">
+                                    <div class="culture-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <h4>Collaborative Team</h4>
+                                    <p>Work with passionate professionals in a supportive, inclusive environment.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="culture-card">
+                                    <div class="culture-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <h4>Career Growth</h4>
+                                    <p>Continuous learning opportunities and clear career advancement paths.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="culture-card">
+                                    <div class="culture-icon">
+                                        <i class="fas fa-balance-scale"></i>
+                                    </div>
+                                    <h4>Work-Life Balance</h4>
+                                    <p>Flexible working arrangements and comprehensive benefits package.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Benefits Grid -->
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <h3 class="text-center mb-4">Our Benefits</h3>
+                                <div class="benefits-grid">
+                                    <div class="benefit-item">
+                                        <h5><i class="fas fa-laptop-code me-2"></i>Latest Technology</h5>
+                                        <p>Work with cutting-edge tools and technologies in a modern workspace.</p>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <h5><i class="fas fa-graduation-cap me-2"></i>Learning & Development</h5>
+                                        <p>Access to training programs, certifications, and skill development
+                                            opportunities.</p>
+                                    </div>
+
+                                    <div class="benefit-item">
+                                        <h5><i class="fas fa-clock me-2"></i>Flexible Hours</h5>
+                                        <p>Flexible working hours and remote work options to maintain work-life balance.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+          
+<!------------------------------------client section start -->
+                <section id="client" class="tj-client-section section-gap fadeInUp wow">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="client-content fadeInUp wow">
+                                    <h5 class="sec-title">
+                                        <span class="client-numbers"></span> Valued Clients Across the Globe
+                                    </h5>
+                                </div>
+
+                                <div class="swiper client-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide client-item wow fadeInUp">
+                                            <div class="client-logo">
+                                                <img src="https://res.cloudinary.com/dskfq6hvj/image/upload/v1739367704/clients/huoxdl5eorkwouao8vq7.png"
+                                                    alt="Client Logo 1" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide client-item wow fadeInUp">
+                                            <div class="client-logo">
+                                                <img src="https://res.cloudinary.com/dskfq6hvj/image/upload/v1739459189/clients/e0zzgfimj6p5na8rwhay.png"
+                                                    alt="Client Logo 2" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide client-item wow fadeInUp">
+                                            <div class="client-logo">
+                                                <img src="https://res.cloudinary.com/dskfq6hvj/image/upload/v1739459085/clients/dewzczmk27tkpseqr56q.png"
+                                                    alt="Client Logo 3" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide client-item wow fadeInUp">
+                                            <div class="client-logo">
+                                                <img src="https://res.cloudinary.com/dskfq6hvj/image/upload/v1739367930/clients/sbfsu4ccwnejcaqv1fyb.png"
+                                                    alt="Client Logo 4" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide client-item wow fadeInUp">
+                                            <div class="client-logo">
+                                                <img src="https://res.cloudinary.com/dskfq6hvj/image/upload/v1736795391/clients/ypw7jaf1w1vbbn5spwv5.webp"
+                                                    alt="Client Logo 5" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide client-item wow fadeInUp">
+                                            <div class="client-logo">
+                                                <img src="https://res.cloudinary.com/dskfq6hvj/image/upload/v1739459577/clients/iiad8ofza245dljnrn0k.png"
+                                                    alt="Client Logo 6" loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <!-- footer area start -->
+
                 <footer class="eb_h3-footer-area">
-                    <div class="eb_h3-footer-top pt-110 pb-80">
+                    <div class="eb_h3-footer-top pt-80 pb-60">
                         <img src="assets/images/bg/h3_footer-shape.png" alt="" class="eb_h3-footer-shape-1">
                         <img src="assets/images/bg/h3_footer-shape-2.png" alt="" class="eb_h3-footer-shape-2">
                         <div class="container">
                             <div class="row justify-content-between">
+
                                 <!-- Address Section -->
                                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-7">
                                     <div class="eb_h3-footer-widget1 mb-30">
@@ -843,23 +943,11 @@
                                                 <img src="assets/images/logo/logo.webp" alt="Triv Logic">
                                             </a>
                                         </div>
-                                        <div class="eb_h3-footer-address">
-                                            <h4>India:</h4>
-                                            <div class="eb_h3-footer-address-loc">
-                                                <i class="fa-solid fa-location-dot"></i>
-                                                <p>Fortune Spaces,<br> SP Heights Western Wing,
-                                                    S.P Lane, Enchakal, Vallakadavu P.O<br>
-                                                    Trivandrum-695008</p>
-                                            </div>
+                                        <div class="eb_h3-footer-para">
+                                            <h8>Your trusted partner for innovative digital solutions, web development,
+                                                and branding strategies that drive business growth.</h8>
                                         </div>
-                                        <div class="eb_h3-footer-address">
-                                            <h4>UK:</h4>
-                                            <div class="eb_h3-footer-address-loc">
-                                                <i class="fa-solid fa-location-dot"></i>
-                                                <p>Marlborough House,<br> 32-36 Hazelwood Road,
-                                                    Northampton, NN1 1LN</p>
-                                            </div>
-                                        </div>
+
                                         <div class="eb_h3-footer-social">
                                             <ul>
                                                 <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -900,16 +988,18 @@
                                     </div>
                                 </div>
 
-                                <!-- Contact Section -->
+                                <!-- Contact Section (Improved with grouping + icons) -->
                                 <div class="col-xl-2 col-lg-3 col-sm-6">
                                     <div class="eb_h3-footer-widget mb-30">
                                         <h3 class="eb_h3-footer-widget-title">Contact</h3>
                                         <ul>
                                             <li><strong>India:</strong></li>
                                             <li><a href="tel:+918848609311">+91 8848609311</a></li>
-                                            <li><a href="tel:+918123010000">+91 8123010000</a></li>
+                                            <li> <a href="tel:+918123010000">+91 8123010000</a></li>
+
                                             <li class="mt-2"><strong>United Kingdom:</strong></li>
-                                            <li><a href="tel:+447771868301">+44 7771868301</a></li>
+                                            <li> <a href="tel:+447771868301">+44 7771868301</a></li>
+
                                             <li class="mt-2"><i class="fa-solid fa-envelope"></i>
                                                 <a href="mailto:info@trivlogic.com">info@trivlogic.com</a>
                                             </li>
@@ -929,6 +1019,7 @@
                                         </form>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -952,10 +1043,38 @@
                         </div>
                     </div>
                 </footer>
-                <!-- Footer area end -->
+                <!-- footer area end -->
+
+
             </div>
         </div>
     </div>
+
+                    <!-- Floating contact icons -->
+    <div class="edug-contact-icons" id="contactIcons">
+        <a href="https://wa.me/+918655897610" target="_blank" class="edug-contact-icon" data-tooltip="Chat on WhatsApp">
+            <i class="lni lni-whatsapp"></i>
+        </a>
+        <a href="mailto:info@eduglobal.in" class="edug-contact-icon" data-tooltip="Send us an Email">
+            <i class="lni lni-envelope"></i>
+        </a>
+        <a href="tel:+918655897610" class="edug-contact-icon" data-tooltip="Call us Now">
+            <i class="lni lni-phone"></i>
+        </a>
+        <a href="#" class="edug-contact-icon" data-tooltip="Live Chat">
+            <i class="lni lni-comments"></i>
+        </a>
+    </div>
+
+    <!-- Back to top with progress -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg class="progress-ring" width="60" height="60">
+            <circle class="progress-ring-bg" cx="30" cy="30" r="26" />
+            <circle class="progress-ring-fill" cx="30" cy="30" r="26" />
+        </svg>
+        <i class="lni lni-arrow-up"></i>
+    </button>
+
 
     <script>
         // Job filtering functionality
@@ -1109,6 +1228,41 @@
     <script src="assets/js/wow.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        const backToTopBtn = document.getElementById('backToTop');
+        const contactIcons = document.getElementById('contactIcons');
+        const progressCircle = document.querySelector('.progress-ring-fill');
+        const radius = 26;
+        const circumference = 2 * Math.PI * radius;
+
+        progressCircle.style.strokeDasharray = `${circumference}`;
+        progressCircle.style.strokeDashoffset = `${circumference}`;
+
+        function updateScrollProgress() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollProgress = scrollTop / scrollHeight;
+
+            const offset = circumference - scrollProgress * circumference;
+            progressCircle.style.strokeDashoffset = offset;
+
+            if (scrollTop > 300) {
+                backToTopBtn.classList.add('visible');
+                contactIcons.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+                contactIcons.classList.remove('visible');
+            }
+        }
+
+        window.addEventListener('scroll', updateScrollProgress);
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
 
 </body>
 

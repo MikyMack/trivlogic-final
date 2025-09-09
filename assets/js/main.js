@@ -32,13 +32,13 @@
 
 ////////////////////////////////////////////////////////////////////////
 // 00. Preloader
-/*let preloader = document.querySelector(".loader-wrap");
+let preloader = document.querySelector(".loader-wrap");
 window.addEventListener('load', function(){
 	preloader.style.opacity = "0";
 	preloader.style.visibility = "hidden";
-});*/
+})
 	
-
+/* logo loader code
 let preloader = document.querySelector(".loader-wrap");
 
 window.addEventListener("load", function() {
@@ -46,7 +46,7 @@ window.addEventListener("load", function() {
         preloader.style.opacity = "0";
         preloader.style.visibility = "hidden";
     }
-});
+}); */
 
 ////////////////////////////////////////////////////////////////////////
 // 01. Screen Width
