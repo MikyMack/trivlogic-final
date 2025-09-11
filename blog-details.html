@@ -11,7 +11,7 @@
 
     <title>Embum - Business Consulting and Business Solutions Template</title>
 
-    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="icon" href="assets/images/hero/trivlogic-logo-blue-background-removebg.png">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/main.css">
+     <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
 
 </head>
 
@@ -50,7 +51,7 @@
                     <div class="sidebar-logo">
                         <a href="index.html">
 
-                            <img src="/assets/images/hero/trivlogic-logo-whiteback-removebg.png"
+                            <img src="assets/images/hero/trivlogic-logo-whiteback-removebg.png"
                                 alt="<%= siteName || 'Triv Logic' %>">
 
                         </a>
@@ -108,9 +109,7 @@
 
     <div class="has-smooth" id="has_smooth"></div>
 
-    <div id="smooth-wrapper">
-        <div id="smooth-content">
-            <div class="body-wrapper">
+   
                 <!-- Start Main Header -->
                 <header class="eb_h3-header-area">
                     <div class="eb_h3-header-main">
@@ -120,7 +119,7 @@
                                     <div class="eb_h2-header-logo">
                                         <a href="#">
                                             <img class="header-logo"
-                                                src="/assets/images/hero/trivlogic-logo-whiteback-removebg.png"
+                                                src="assets/images/hero/trivlogic-logo-whiteback-removebg.png"
                                                 alt="<%= siteName || 'Triv Logic' %>">
                                         </a>
                                     </div>
@@ -134,40 +133,23 @@
                                                 <li> <a href="index.html">Home</a> </li>
                                                 <li> <a href="about.html">About</a> </li>
 
+      <li class="menu-has-child">
+                                        <a href="service.html">Services</a>
+                                        <ul class="submenu">
+                                            <li><a href="webdev-service.html">Web Development</a></li>
+                                            <li><a href="software-dev-service.html">Software Development</a></li>
+                                            <li><a href="mobile-app-dev-service.html">Mobile App Development</a></li>
+                                            <li><a href="digital-mark-service.html">Digital Marketing</a></li>
+                                            <li><a href="Branding-service.html">Branding</a></li>
+                                            <li><a href="seo-service.html">SEO</a></li>
 
+                                        </ul>
+                                    </li>
+                                           <li> <a href="projects.html">Projects</a> </li>
 
-                                                <li class="menu-has-child">
-                                                    <a href="service.html">Service</a>
-                                                    <ul class="submenu">
-                                                        <li><a href="webdev-service.html">Web Development</a></li>
-                                                        <li><a href="software-dev-service.html">Software Development</a>
-                                                        </li>
-                                                        <li><a href="mobile-app-dev-service.html">Mobile App
-                                                                Development</a></li>
-                                                        <li><a href="digital-mark-service.html">Digital Marketing</a>
-                                                        </li>
-                                                        <li><a href="Branding-service.html">Branding</a></li>
-                                                        <li><a href="seo-service.html">SEO</a></li>
-
-                                                    </ul>
-                                                </li>
-
-                                                <li class="menu-has-child">
-                                                    <a href="#">Project</a>
-                                                    <ul class="submenu">
-                                                        <li><a href="projects.html">Project </a></li>
-                                                        <li><a href="projectDetails.html">Project Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-has-child">
-                                                    <a href="#">News</a>
-                                                    <ul class="submenu">
-                                                        <li><a href="blog.html">News</a></li>
-                                                        <li><a href="blog-details.html">News Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="career.html">Career</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
+                                    <li> <a href="blog.html">News</a> </li>
+                                    <li><a href="career.html">Careers</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
 
                                             </ul>
                                         </nav>
@@ -175,7 +157,7 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-3 col-6">
                                     <div class="eb_h2-header-action">
-                                        <a href="#" class="eb_h3-theme-btn">Get a Quote</a>
+                                       <a href="/contact.html" class="eb_h3-theme-btn">Get a Quote</a>
                                         <div class="eb_h4-menubar side-toggle d-lg-none">
                                             <span>
                                                 <span></span>
@@ -190,6 +172,10 @@
                     </div>
                 </header>
                 <!-- Start Main Header -->
+
+                 <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <div class="body-wrapper">
 
                 <!-- breadcrumb area start -->
                 <section class="eb-breadcrumb-area">
@@ -530,6 +516,83 @@
             </div>
         </div>
     </div>
+
+
+                      <!-- Floating contact icons -->
+    <div class="edug-contact-icons" id="contactIcons">
+        <a href="https://wa.me/+918655897610" target="_blank" class="edug-contact-icon" data-tooltip="Chat on WhatsApp">
+            <i class="lni lni-whatsapp"></i>
+        </a>
+        <a href="mailto:info@eduglobal.in" class="edug-contact-icon" data-tooltip="Send us an Email">
+            <i class="lni lni-envelope"></i>
+        </a>
+        <a href="tel:+918655897610" class="edug-contact-icon" data-tooltip="Call us Now">
+            <i class="lni lni-phone"></i>
+        </a>
+        <a href="#" class="edug-contact-icon" data-tooltip="Live Chat">
+            <i class="lni lni-comments"></i>
+        </a>
+    </div>
+
+    <!-- Back to top with progress -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg class="progress-ring" width="60" height="60">
+            <circle class="progress-ring-bg" cx="30" cy="30" r="26" />
+            <circle class="progress-ring-fill" cx="30" cy="30" r="26" />
+        </svg>
+        <i class="lni lni-arrow-up"></i>
+    </button>
+
+    <script>  window.addEventListener("scroll", function () {
+                    const header = document.querySelector(".eb_h3-header-main");
+                    const logo = document.querySelector(".header-logo");
+                    if (window.scrollY > 50) {
+                        header.classList.add("scrolled");
+                        logo.src = "assets/images/hero/trivlogic-logo-blue-background-removebg.png";
+                    } else {
+                        header.classList.remove("scrolled");
+                        logo.src = "assets/images/hero/trivlogic-logo-whiteback-removebg.png";
+                    }
+                });</script>
+
+
+
+
+            <script>
+                const backToTopBtn = document.getElementById('backToTop');
+                const contactIcons = document.getElementById('contactIcons');
+                const progressCircle = document.querySelector('.progress-ring-fill');
+                const radius = 26;
+                const circumference = 2 * Math.PI * radius;
+
+                progressCircle.style.strokeDasharray = `${circumference}`;
+                progressCircle.style.strokeDashoffset = `${circumference}`;
+
+                function updateScrollProgress() {
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+                    const scrollProgress = scrollTop / scrollHeight;
+
+                    const offset = circumference - scrollProgress * circumference;
+                    progressCircle.style.strokeDashoffset = offset;
+
+                    if (scrollTop > 300) {
+                        backToTopBtn.classList.add('visible');
+                        contactIcons.classList.add('visible');
+                    } else {
+                        backToTopBtn.classList.remove('visible');
+                        contactIcons.classList.remove('visible');
+                    }
+                }
+
+                window.addEventListener('scroll', updateScrollProgress);
+
+                backToTopBtn.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+
+            </script>
+
 
 
     <!-- jQuery Js -->

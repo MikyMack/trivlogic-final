@@ -1120,3 +1120,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 clientSwiper.update();
             }, 100);
         });
+
+	
+    
